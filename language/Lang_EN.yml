@@ -1,0 +1,1830 @@
+ 
+ 
+ # TRANSLATIONS OF THE LANGUAGE AND DIALOGUE FILES
+ 
+LANGUAGE:
+  command by player: '%tag% <red>This command must be used by a player.'
+  command by console: '%tag% <red>This command must be used by a CONSOLE.'
+  disabled world command: '%tag% <red>Outpost commands are turned off in this world.'
+  no permission: '%tag% <red>You do not have permission'
+  currency vault: Money
+  currency playerpoints: Points
+  disabled region command: '%tag% <red>You cannot use these commands in this region.'
+  player no actions: '%tag% <red>There are no pending actions.'
+  disabled function: '%tag% <red>This feature is turned off.'
+  wand cleared: ' <gray>- The wand has been cleaned.'
+  gui error: '%tag% <red>This menu cannot be opened right now, please contact a member of staff.'
+  value greater than: '%tag% <red>The value must be greater than 1.'
+  advanges sync: '%tag% <green>The advanges are being synchronized.'
+  advanges sync gui: <green>Synchronizing advanges.
+  no group: No group
+  all days: Every day
+  month plus: month+
+  ago: Ago
+  zero: 0 (Zero)
+  none: None
+  'true': <green>YES
+  'false': <red>NO
+  player offline: '%tag% <red>Player offline or not found.'
+  help admin pagination prev: <click:run_command:"/uoutpost help %page%"><hover:show_text:'<green>Click to go back.'><gradient:#55ffff:#00AAAA><< Previous</gradient></hover></click>
+  help admin pagination next: <click:run_command:"/uoutpost help %page%"><hover:show_text:'<green>Click to advance.'><gradient:#00AAAA:#55ffff>Next >></gradient></hover></click>
+  help admin pagination separer: <#00AAAA>|
+  help player pagination prev: <click:run_command:"/outpost help %page%"><hover:show_text:'<green>Click to go back.'><gradient:#55ffff:#00AAAA><< Previous</gradient></hover></click>
+  help player pagination next: <click:run_command:"/outpost help %page%"><hover:show_text:'<green>Click to advance.'><gradient:#00AAAA:#55ffff>Next >></gradient></hover></click>
+  help player pagination separer: <#00AAAA>|
+  help list empty: ' <red>- There is nothing on this list.'
+  help empty: <red>(Empty).
+  help uoutpost header: '<#00AAAA><bold>Admin Outpost Help:</bold> <gray>(%page%/%pages%) <newline> <green>[] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <light_purple>() <gray>optional <newline> '
+  help uoutpost header subcommand: '<newline><#00AAAA><bold>Admin SubCommand Help:</bold> <newline> <green>[] <gray>subcmd <gray>| <red><> <gray>obligatory <gray>| <red>() <gray>optional <newline> '
+  help outpost header: '<#00AAAA><bold>Help with Outpost: <gray>(%page%/%pages%)'
+  help outpostlist header: '<#00AAAA><bold>Listing all outposts: <gray>(%amount%)'
+  help outpostlist format: <white> - <click:run_command:"/uoutpost view %name%"><hover:show_text:'<green>Click to view.'><aqua>%name%</hover></click>
+  separer: <gradient:#00AAAA:#55ffff>████████████████████████████████
+  outpost null: No info
+  outpost wand name: <gradient:#00AAAA:#55ffff><bold>Outpost</bold></gradient> <gold><bold>WAND</bold>
+  outpost wand lore:
+  - ' '
+  - ' <yellow>This item should be used to mark'
+  - <yellow>region points for region.
+  - ' '
+  - ' <aqua>LEFT-CLICK <gray>to mark point <aqua>#1'
+  - ' <aqua>RIGHT-CLICK <gray>to mark point <aqua>#2'
+  outpost keywand name: <gradient:#00AAAA:#55ffff><bold>Outpost</bold></gradient> <red><bold>KEY WAND</bold>
+  outpost keywand lore:
+  - ' '
+  - ' <yellow>You must use this Wand to '
+  - <yellow>add new reward chests or click
+  - <yellow>on an existing chest to remove it
+  - <yellow>from the list.
+  outpost keyitem name: <gradient:#00AAAA:#55ffff><bold>%uoutpost_name%'s Outpost KEY</bold></gradient>
+  outpost keyitem lore:
+  - ' '
+  - ' <yellow>Use this Key on loot'
+  - <yellow>chests to get your rewards
+  outpost keyitem notfound: '%tag% <red>You need a Key to open this loot chest.'
+  outpost keyitem use: '%tag% <green>You used your Loot Key!'
+  outpost hand empty: '%tag% <red>You must be holding an item in your hand to add.'
+  region marked point: '%tag% <yellow>Point <aqua>#%point_number% <yellow>was scored in <aqua>%location%'
+  outpost already exists: '%tag% <red>There is already a outpost with this name.'
+  outpost marks empty: '%tag% <red>Outpost location marks are empty, use wand to tag with <#55ffff>/uoutpost wand'
+  outpost does not exists: '%tag% <red>There is no outpost with this name, see the list in <#55ffff>/uoutpost list'
+  outpost does not exists player: '%tag% <red>There is no outpost with this name, see the list in <#55ffff>/outpost list'
+  outpost command id size: '%tag% <red>This Outpost does not contain saved commands.'
+  outpost command id error: '%tag% <red>This command does not exist in this outpost'
+  outpost delete disabled: '%tag% <red>A Outpost cannot be deleted while it is in progress. end the event before trying to delete it.'
+  outpost delete disabled gui: <red>Event is in progress.
+  outpost deleted unexpectedly: '%tag% <red>The event that was in progress was unexpectedly deleted or not found and was forcibly terminated.'
+  outpost loot save success: '%tag% <green>This outpost loot has been saved successfully.'
+  outpost loot save success gui: <green>Loot saved successfully!
+  outpost loot save error: '%tag% <red>There was an error saving this outpost''s loot, please try again.'
+  outpost loot save error gui: <red>Error saving loot!
+  outpost command delete success: '%tag% <green>The outpost command was successfully removed!'
+  outpost command delete success gui: <green>Cmd successfully removed!
+  outpost command delete error: '%tag% <red>There was an error removing the outpost command.'
+  outpost command delete error gui: <red>Error removing cmd!
+  outpost command add success: '%tag% <green>The outpost command was successfully added!'
+  outpost command add success gui: <green>Cmd successfully added!
+  outpost command add error: '%tag% <red>There was an error add the outpost command.'
+  outpost command add error gui: <red>Error add cmd!
+  outpost delete success: '%tag% <green>The outpost was successfully deleted!'
+  outpost delete success gui: <green>Outpost successfully deleted!
+  outpost delete error: '%tag% <red>There was an error deleting the outpost.'
+  outpost delete error gui: <red>Error deleting the Outpost!
+  outpost key change success: '%tag% <green>The Key system has been successfully enabled.'
+  outpost key change success gui: <green>Value changed!
+  outpost key change error: '%tag% <red>An error occurred while enabling the key system'
+  outpost key change error gui: <red>Error to change.
+  outpost loottype change success: '%tag% <green>The Loot type system has been successfully enabled.'
+  outpost loottype change success gui: <green>Loot type enabled with success!
+  outpost loottype change error: '%tag% <red>An error occurred while enabling the Loot type system'
+  outpost loottype change error gui: <red>Error enabling the Loot type!
+  outpost key get success: '%tag% <green>You have received a wand for keys from this outpost.'
+  outpost key get success gui: <green>You have received a wand!
+  outpost key get error: '%tag% <red>There was an error generating the Key Wand for this outpost'
+  outpost key get error gui: <red>Error generating the key!
+  outpost key remove error: '%tag% <red>An error occurred while removing this block as key loot.'
+  outpost key remove error gui: <red>Error while removing block.
+  outpost key remove success: '%tag% <green>This block has been removed as a loot block.'
+  outpost key remove success gui: <green>Block has been removed.
+  outpost key create error: '%tag% <red>There was an error adding this block as key loot.'
+  outpost key create success: '%tag% <green>This block has been added as a loot block.'
+  outpost key teleport success: '%tag% <green>You have been teleported to the loot block.'
+  outpost key teleport error: '%tag% <red>There was an error teleporting to the loot block.'
+  outpost keyblock noloots: '%tag% <red>This loot key is either invalid or no longer exists.'
+  outpost keyblock noallowed: '%tag% <red>This block is not in the allowed block list for Loot block'
+  outpost key change limit: '%tag% <red>The maximum limit for keys is 64 items'
+  outpost key change limit gui: <red>The limit is 64
+  outpost key change minimum: '%tag% <red>The minimum value for keys is 1 item.'
+  outpost key change minimum gui: <red>The minimum is 1
+  outpost proximity change success: '%tag% <green>The proximity system has been successfully toggled.'
+  outpost proximity change success gui: <green>Value changed!
+  outpost proximity change error: '%tag% <red>An error occurred while toggle the proximity system'
+  outpost proximity change error gui: <red>Error to change.
+  outpost proximity type: <red>Disabled
+  outpost proximity world: <yellow>World
+  outpost proximity allworlds: <yellow>All Worlds
+  outpost proximity blocks: <aqua>Blocks
+  outpost proximity change limit: '%tag% <red>The maximum limit for proximity is 64 blocks'
+  outpost proximity change limit gui: <red>The limit is 64
+  outpost proximity change minimum: '%tag% <red>The minimum value for proximity is 1 block.'
+  outpost proximity change minimum gui: <red>The minimum is 1
+  outpost advange_enabled success gui: <green>Advantage toggled
+  outpost advange_enabled error gui: <red>Error to change!
+  outpost advange whitelist remove error gui: <red>Error removing!
+  outpost advange whitelist remove success gui: <green> Successfully removed
+  outpost advange whitelist added error gui: <red>Error adding!
+  outpost advange whitelist added success gui: <green> Successfully added
+  outpost advange whitelist doesnot contain: '%tag% <red>This whitelist does not contain this key, use the values: {values}'
+  outpost advange whitelist already contain: '%tag% <red>This whitelist already contains this key.'
+  outpost advange_multiplier change success gui: <green>Value changed!
+  outpost advange_multiplier change error gui: <red>Error to change.
+  outpost advange_multiplier change minimum: '%tag% <red>The minimum value for multiplier is 1.0.'
+  outpost advange_multiplier change minimum gui: <red>The minimum is 1.0
+  outpost advantages list header: '<newline><#00AAAA><bold>Advantages whitelist:'
+  outpost advantages list format: '<click:run_command:"/uoutpost advantages view {outpost} {id}"><hover:show_text:''<green>Click to view.''><green>{id} <gray>- <white>Multiplier: <aqua>{multiplier} <gray>- <white>State: <aqua>{state}</hover></click>'
+  outpost advantages view header: '<newline><#00AAAA><bold>Advantages view:'
+  outpost advantages view format: '<green>{id} <gray>- <white>Name: <aqua>{name} <gray>- <white>Multiplier: <aqua>{multiplier} <gray>- <white>State: <aqua>{state}'
+  outpost advantages whitelist list: ' <gray>- Whitelist ({whitelist_amount}): {whitelist}'
+  outpost whitelist state true: <green>Enabled
+  outpost whitelist state false: <red>Disabled
+  outpost capture change success gui: <green>Value changed!
+  outpost capture change error gui: <red>Error to change.
+  outpost capture change minimum: '%tag% <red>The minimum value for capture is 1 second.'
+  outpost capture change minimum gui: <red>The minimum is 1
+  outpost icon save success: '%tag% <green>New outpost icon saved successfully.'
+  outpost icon save success gui: <green>Icon saved successfully.
+  outpost icon save error: '%tag% <red>There was an error saving the new item.'
+  outpost icon save error gui: <red>Error saving the new item.
+  outpost event start success: '%tag% <green>The Outpost event started successfully'
+  outpost event start success gui: <green>Event started successfully
+  outpost event start error: '%tag% <red>There was an error start the outpost event.'
+  outpost event start error gui: <red>Error start the event.
+  outpost event stop success: '%tag% <green>The outpost event ended successfully.'
+  outpost event stop success gui: <green>Event ended successfully
+  outpost event stop error: '%tag% <red>There was an error ending the outpost event.'
+  outpost event stop error gui: <red>Error ending the event.
+  outpost event already started: '%tag% <red>This event is already happening right now'
+  outpost event already stoped: '%tag% <red>This event is not started.'
+  outpost event teleport success: '%tag% <green>You were teleported to the location of the outpost.'
+  outpost event teleport error: '%tag% <red>An error occurred while teleport to the outpost.'
+  outpost player no group: <red>No Faction
+  outpost player no player: <red>No Player
+  outpost action already running: '%tag% <red>There is already an action in progress, use <#55ffff>/outpost cancel <red>to cancel previous actions'
+  outpost endaction change success: <green>Ending action has been changed successfully.
+  outpost endaction change success gui: <green>Successfully changed.
+  outpost endaction change error: <red>An error occurred while changing the end action.
+  outpost endaction change error gui: <red>Error when changing
+  outpost endaction not found: '%tag% <red>This type of action does not exist.'
+  outpost bordercolor change success: <green>Border color has been changed successfully.
+  outpost bordercolor change success gui: <green>Changed color
+  outpost bordercolor change error: <red>There was an error changing the border color.
+  outpost bordercolor change error gui: <red>Error when changing
+  outpost bordercolor not found: '%tag% <red>This color does not exist, use <dark_red>RED<red>, <green>GREEN <red>or <blue>BLUE'
+  outpost control noplayer: <red>Nobody, go go!
+  outpost dir forward: Go ahead!
+  outpost dir backward: Behind you.
+  outpost dir left: On your left.
+  outpost dir right: On your right.
+  outpost dir arrived: You came.
+  outpost holo already exists: '%tag% <red>A hologram with this name already exists.'
+  outpost holo no exists: '%tag% <red>There is no hologram with this name.'
+  outpost holo type no exists: '%tag% <red>This type does not exist, use: {list}'
+  help hololist header: '<#00AAAA><bold>Listing all holograms: <gray>(%amount%)'
+  help hololist format: '<white> - <click:run_command:"/uoutpost hologram tp {id}"><hover:show_text:''<green>Click to teleport.''><aqua>{id} <gray>- <white>Type: <aqua>{type} <gray>(MaxLines: {maxlines})</hover></click>'
+  outpost hologram top header: <color:#00AAAA><bold>Top Outpost {type}</bold> <green><bold>{time}
+  outpost hologram top footer: <green>More use <color:#00AAAA>/outpost stats
+  outpost hologram top format topplayer: '<aqua>{num} <gray>| <white>Player: <green>{data} <gray>| <white>Captures: <green>{wins} | <white>Time: <green>{maxtime}'
+  outpost hologram top format topgroup: '<aqua>{num} <gray>| <white>Group: <green>{data} <gray>| <white>Captures: <green>{wins} | <white>Time: <green>{maxtime}'
+  outpost topgroup: Groups
+  outpost topplayer: Players
+  outpost single topgroup: Group
+  outpost single topplayer: Player
+  outpost all: Everytime
+  outpost daily: Today
+  outpost weekly: This Week
+  outpost monthly: This Month
+  outpost yearly: This Year
+  outpost none: None.
+  outpost top format: '<aqua>{num} <gray>| <white>{type}: <green>{data} <gray>| <white>Captures: <green>{value} <green>({time})'
+  outpost hologram teleport success: '%tag% <green>You have been teleported to the hologram.'
+  outpost hologram teleport error: '%tag% <red>There was an error teleporting to the hologram.'
+  outpost hologram remove error: '%tag% <red>An error occurred while removing this hologram.'
+  outpost hologram remove error gui: <red>Error while removing holo.
+  outpost hologram remove success: '%tag% <green>This hologram has been deleted.'
+  outpost hologram remove success gui: <green>Holo has been removed.
+  outpost hologram create error: '%tag% <red>An error occurred while creating this hologram.'
+  outpost hologram create error gui: <red>Error while create holo.
+  outpost hologram create success: '%tag% <green>This hologram has been created.'
+  outpost hologram create success gui: <green>Holo has been created.
+  stats no exists: '%tag% <red>This status does not exist, check the type or value.'
+  stats no exists gui: <red>Status does not exist
+  outpost stats remove error: '%tag% <red>An error occurred while removing this stats.'
+  outpost stats remove error gui: <red>Error while removing stats.
+  outpost stats remove success: '%tag% <green>This stats has been deleted.'
+  outpost stats remove success gui: <green>Stats has been removed.
+  outpost stats create error: '%tag% <red>An error occurred while creating this stats.'
+  outpost stats create error gui: <red>Error while create stats.
+  outpost stats create success: '%tag% <green>This stats has been created.'
+  outpost stats create success gui: <green>Stats has been created.
+  outpost create success: '%tag% <green>The new Outpost was successfully created.'
+  outpost create success gui: <green>Successfully created.
+  outpost create error: '%tag% <red>There was an error creating the new Outpost.'
+  outpost create error gui: <red>Error creating the new Outpost.
+  outpost no upcoming events: <red>No upcoming events.
+  outpost no happening events: <red>No event happening.
+  outpost no time events: 0s
+  outpost direction another world: <red>Another <gray>(%world%)
+  outpost event now: <green>Happening now!
+  outpost no event: No Event
+  outpost view header: '<newline><#00AAAA><bold>Viewing information from <aqua>%uoutpost_name%:'
+  outpost view list:
+  - <#00AAAA><bold>|</bold> <gradient:#00AAAA:#55ffff>Info:</gradient>
+  - ' <white>Name: <aqua>%uoutpost_name%'
+  - ' <white>Capture Time: <aqua>%uoutpost_capture_time%'
+  - ' <white>Proximity: <aqua>%uoutpost_proximity_enabled% <gray>(%uoutpost_proximity_size%)'
+  - <#00AAAA><bold>|</bold> <gradient:#00AAAA:#55ffff>Rewards:</gradient>
+  - ' <white>Commands: <aqua>%uoutpost_commands_amount%'
+  - ' <white>Loot: <aqua>%uoutpost_loot_type% <gray>(%uoutpost_loots_amount%)'
+  - <#00AAAA><bold>|</bold> <gradient:#00AAAA:#55ffff>Local:</gradient>
+  - ' <white>World: <aqua>%uoutpost_world% <gray>(%uoutpost_coord_x%, %uoutpost_coord_y%, %uoutpost_coord_z%)'
+  - ' <white>Area: <aqua>%uoutpost_cuboid_area%'
+  outpost view list player:
+  - <#00AAAA><bold>|</bold> <gradient:#00AAAA:#55ffff>Info:</gradient>
+  - ' <white>Name: <aqua>%uoutpost_name%'
+  - ' <white>Capture Time: <aqua>%uoutpost_capture_time%'
+  - <#00AAAA><bold>|</bold> <gradient:#00AAAA:#55ffff>Rewards:</gradient>
+  - ' <white>Commands: <aqua>%uoutpost_commands_amount%'
+  - ' <white>Loot: <aqua>%uoutpost_loot_type% <gray>(%uoutpost_loots_amount%)'
+  outpost commands header: '<newline><#00AAAA><bold>Commands list from <aqua>%uoutpost_name%: <gray>(%uoutpost_commands_amount%)'
+  outpost commands format: ' <green>{num} <gray>- <aqua>{cmd}'
+  outpost loots header: '<newline><#00AAAA><bold>Loots list from <aqua>%uoutpost_name%: <gray>(%uoutpost_loots_amount%)'
+  outpost loots header sub: ' <gray>Type: <green>%uoutpost_loot_type% <gray>| key Amount: <green>%uoutpost_keyreceive_amount% <gray>| Chance: <green><green>%uoutpost_loot_chance% <newline>'
+  outpost loots format: ' <gray>- <white>Slot: <aqua>{slot} <gray>- <aqua>{type} <gray>- <white>Amount: <aqua>{amount}'
+  outpost keys header: '<newline><#00AAAA><bold>Loot Block list:'
+  outpost keys header sub: ' <gray>Enabled: <green>%uoutpost_usekey%<newline>'
+  outpost keys format: '<click:run_command:"/uoutpost keys blocktp {id}"><hover:show_text:''<green>Click to teleport.''><green>{num} <gray>- <white>World: <aqua>{world} <gray>- <white>Location: <aqua>{x}, {y}, {z}</hover></click>'
+  outpost keys no exists: '%tag% <red>There is no loot block with this id, use <#55ffff>/uoutpost keys list <red>to see all'
+  outpost player advantages header: '<newline><#00AAAA><bold>Player advantages:'
+  outpost player advantages format:
+  - <newline><#00AAAA><bold>|</bold> <gradient:#00AAAA:#55ffff>Captures:</gradient>
+  - ' <white>Amount: <aqua>%uoutpost_player_captures_amount%'
+  - ' <white>Outpost: <aqua>%uoutpost_player_captures%'
+  - ' <white>Involved <gray>(%uoutpost_player_involved_amount%)<white>: <aqua>%uoutpost_player_involved%'
+  - <newline><#00AAAA><bold>|</bold> <gradient:#00AAAA:#55ffff>Advantages:</gradient>
+  - ' <white>Amount: <aqua>%uoutpost_advantages_amount%'
+  - ''
+  outpost player advantages list: ' <green>%uoutpost_advantages:{OUTPOST}:{id}:name% <gray>| <white>Multiplier: <aqua>+%uoutpost_advantages:{OUTPOST}:{id}:multiplier% <gray>(%uoutpost_advantages:{OUTPOST}:{id}:outpostname%)'
+  outpost player stats header: '<newline><#00AAAA><bold>Player stats:'
+  outpost player stats topplayer format: ' <gray>Individual:<newline> <gray>- <white>Player: <aqua>{player} <gray>| <white>Captures: <aqua>{wins}'
+  outpost player stats topgroup format: ' <gray>In Group:<newline> <gray>- <white>Name: <aqua>{group} <gray>| <white>Captures: <aqua>{wins}'
+  outpost events all header: '<newline><#00AAAA><bold>All pre-programmed events:'
+  outpost events next header: '<newline><#00AAAA><bold>Upcoming Outpost Events:'
+  outpost events no next: ' <red>- No upcoming or pre-scheduled events.'
+  outpost extension not exist: '%tag% <red>This extension does not exist in the official list, see the list in <#00AAAA>/uoutpost ext all'
+  outpost extension not enabled: '%tag% <red>This extension has not yet been downloaded, see all in <#00AAAA>/uoutpost ext list'
+  outpost extension already enabled: '%tag% <red>This extension is already downloaded, you can check for updates using <#00AAAA>/uoutpost ext update <name>'
+  outpost extension header: '<newline><#00AAAA><bold>Downloaded extensions list:'
+  outpost extension format: '<click:run_command:"/uoutpost extension view {id}"><hover:show_text:''<green>Click to view.''><green>{num} <gray>- <white>Name: <aqua>{name} <gray>- <white>State: <aqua>{state}</hover></click>'
+  outpost extension all header: '<newline><#00AAAA><bold>All extensions list:'
+  outpost extension all format: '<click:run_command:"/uoutpost extension view {id}"><hover:show_text:''<green>Click to view.''><green>{num} <gray>- <white>Name: <aqua>{name} <gray>- <white>State: <aqua>{downloaded} <gray>({state})</hover></click>'
+  outpost extension view header: '<newline><#00AAAA><bold>Extension information:'
+  outpost extension view format:
+  - <newline><#00AAAA><bold>|</bold> <gradient:#00AAAA:#55ffff>Info:</gradient>
+  - ' <white>Name: <aqua>{name}'
+  - ' <white>Status: <aqua>{status}'
+  - ' <white>Author: <aqua>{author}'
+  - ' <white>Version: <aqua>{version}'
+  - ' <white>Desc: <aqua>{description}'
+  - ''
+  outpost state true: <green>Enabled
+  outpost state false: <red>Disabled
+  outpost extension state true: <green>Enabled
+  outpost extension state false: <red>Disabled
+  outpost extension downloaded true: <green>Downloaded
+  outpost extension downloaded false: <red>Not downloaded
+  outpost extension event already exists: '%tag% <red>The extension has already been downloaded before, you can try to update.'
+  outpost extension event already updated: '%tag% <red>The extension is already updated.'
+  outpost extension event error download: '%tag% <red>I cant download the extension, try again.'
+  outpost extension event error repo: '%tag% <red>There was an error, it looks like the repository was not found.'
+  outpost extension event general error: '%tag% <red>There was an error downloading the extension, please try again.'
+  outpost extension event need reload addons: '%tag% <red>The extension needs to be updated, update using <#00AAAA>/uoutpost ext reload'
+  outpost extension event success download: '%tag% <green>The extension was successfully downloaded, update the extensions using <#00AAAA>/uoutpost ext reload'
+  outpost extension download started: '%tag% <green>Download process started, wait....'
+  outpost extension download started gui: <green>Download started, wait....
+  outpost extension all: <red>All
+  outpost extension instaled: <green>Instaled
+  outpost extension reload wait gui: <green>Wait...
+  outpost extension reloaded gui: <green>Reloaded (%time%)
+ 
+# TRANSLATIONS OF GUI MENU FILES
+ 
+GUI:
+  General admin_outpost_loot title: <#00AAAA>Outpost loots <gray>| <aqua>%uoutpost_name%
+  General admin_outpost_loot items fill name: ' '
+  General admin_outpost_loot items fill lore: [
+    ]
+  General admin_outpost_loot items save name: <green>Save this.
+  General admin_outpost_loot items save lore:
+  - ' '
+  - <yellow>Click to save
+  General admin_outpost_loot items info name: <green>Loot information
+  General admin_outpost_loot items info lore:
+  - ' '
+  - ' <yellow>Loots are given to players at the'
+  - '<yellow>end of the event and any type of '
+  - '<yellow>item can be added. '
+  - ' <aqua>To add items drag items to the '
+  - <aqua>menu and then click save.
+  - ' <red>To remove drag the item out of '
+  - <red>the gui and click save.
+  General admin_outpost_loot items type name: <green>Loot configuration
+  General admin_outpost_loot items type lore:
+  - ' '
+  - ' <white>Type: <aqua>%uoutpost_loot_type%'
+  - ''
+  - ' <yellow>Click to edit.'
+  General admin_outpost_loot items chance name: <green>Loot Chance configuration
+  General admin_outpost_loot items chance lore:
+  - ' '
+  - ' <white>Current chance: <aqua>%uoutpost_loot_chance%'
+  - ''
+  - ' <yellow>Click to edit.'
+  General admin_outpost_loot items back name: <red>Come Back
+  General admin_outpost_loot items back lore:
+  - ' '
+  - <yellow>Back without saving.
+  General admin_outpost_commands title: <#00AAAA>Outpost commands <gray>| <aqua>%uoutpost_name%
+  General admin_outpost_commands items fill name: ' '
+  General admin_outpost_commands items fill lore: [
+    ]
+  General admin_outpost_commands items add name: <green>Add new command.
+  General admin_outpost_commands items add lore:
+  - ' '
+  - <yellow>Click to add
+  General admin_outpost_commands items current name: '<green>ID: {id}'
+  General admin_outpost_commands items current lore:
+  - ' '
+  - ' <white>Type: {type}'
+  - ' <white>Cmd: %uoutpost_command:{id}%'
+  - ' '
+  - ' <yellow>LEFT-CLICK to close and run command.'
+  - ' <red>RIGHT-CLICK to remove command.'
+  General admin_outpost_commands items current2 name: '<green>ID: {id}'
+  General admin_outpost_commands items current2 lore:
+  - ' '
+  - ' <white>Type: {type}'
+  - ' <white>Cmd: {cmd}'
+  - ' '
+  - ' <yellow>LEFT-CLICK to close and run command.'
+  - ' <red>RIGHT-CLICK to remove command.'
+  General admin_outpost_commands items prev name: <green>Previous page.
+  General admin_outpost_commands items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General admin_outpost_commands items next name: <green>Next page.
+  General admin_outpost_commands items next lore:
+  - ' '
+  - <yellow>Click to next
+  General admin_outpost_commands items info name: <green>Command information
+  General admin_outpost_commands items info lore:
+  - ' '
+  - ' <yellow>Commands are triggered by the console'
+  - <yellow>at the end of events and any type of
+  - <yellow>command can be added, with or without "/".
+  - ' <yellow>Accepted variables: <aqua>%player%'
+  General admin_outpost_commands items back name: <red>Come Back
+  General admin_outpost_commands items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_outpost_commands_select_type title: <#00AAAA>Command type <gray>| <aqua>%uoutpost_name%
+  General admin_outpost_commands_select_type items fill name: ' '
+  General admin_outpost_commands_select_type items fill lore: [
+    ]
+  General admin_outpost_commands_select_type items capture name: <green>CAPTURE command
+  General admin_outpost_commands_select_type items capture lore:
+  - ' '
+  - ' <yellow>This command is executed when'
+  - <yellow>a new player captures outpost.
+  - ' <yellow>Accepted variables: <aqua>%player%'
+  General admin_outpost_commands_select_type items disable name: <green>DISABLE command
+  General admin_outpost_commands_select_type items disable lore:
+  - ' '
+  - ' <yellow>This command will be executed when'
+  - <yellow>the event disable.
+  General admin_outpost_commands_select_type items enable name: <green>ENABLE command
+  General admin_outpost_commands_select_type items enable lore:
+  - ' '
+  - ' <yellow>This command will be executed when'
+  - <yellow>the event enable.
+  General admin_outpost_commands_select_type items abandon name: <green>Abandon command
+  General admin_outpost_commands_select_type items abandon lore:
+  - ' '
+  - ' <yellow>This command will be executed when'
+  - <yellow>player abandon event.
+  General admin_outpost_commands_select_type items back name: <red>Come Back
+  General admin_outpost_commands_select_type items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_outpost_command_delete_confirm title: <red>Confirm delete the command?
+  General admin_outpost_command_delete_confirm items fill name: ' '
+  General admin_outpost_command_delete_confirm items fill lore: [
+    ]
+  General admin_outpost_command_delete_confirm items confirm name: <green>YES, DELETE!
+  General admin_outpost_command_delete_confirm items confirm lore:
+  - ' '
+  - <yellow>Click to confirm.
+  General admin_outpost_command_delete_confirm items back name: <red>CANCEL
+  General admin_outpost_command_delete_confirm items back lore:
+  - ' '
+  - <yellow>Click to go back
+  General admin_outpost_view title: <#00AAAA>Outpost <aqua>%uoutpost_name%
+  General admin_outpost_view items fill name: ' '
+  General admin_outpost_view items fill lore: [
+    ]
+  General admin_outpost_view items fill2 name: ' '
+  General admin_outpost_view items fill2 lore: [
+    ]
+  General admin_outpost_view items info name: '<yellow>Outpost Information:'
+  General admin_outpost_view items info lore:
+  - ' '
+  - ' <white>Name: <aqua>%uoutpost_name%'
+  - ' <white>Cuboid area: <aqua>%uoutpost_cuboid_area%'
+  - ' <white>Commands: <aqua>%uoutpost_commands_amount%'
+  - ' <white>Loots: <aqua>%uoutpost_loots_amount%'
+  General admin_outpost_view items loots name: <green>Outpost Loots.
+  General admin_outpost_view items loots lore:
+  - ' '
+  - ' <white>Amount: <aqua>%uoutpost_loots_amount%'
+  - ''
+  - ' <yellow>Click to open.'
+  General admin_outpost_view items commands name: <green>Outpost Commands.
+  General admin_outpost_view items commands lore:
+  - ' '
+  - ' <white>Amount: <aqua>%uoutpost_commands_amount%'
+  - ''
+  - ' <yellow>Click to open.'
+  General admin_outpost_view items proximity name: <green>Outpost Proximity Alerts.
+  General admin_outpost_view items proximity lore:
+  - ' '
+  - ' <white>Enabled: <aqua>%uoutpost_proximity_enabled%'
+  - ' <white>Blocks: <aqua>%uoutpost_proximity_size%'
+  - ''
+  - ' <yellow>Click to open.'
+  General admin_outpost_view items capture name: <green>Outpost Capture Time.
+  General admin_outpost_view items capture lore:
+  - ' '
+  - ' <white>Time: <aqua>%uoutpost_capture_time_formated%'
+  - ''
+  - ' <yellow>Click to open.'
+  General admin_outpost_view items delete name: <green>Delete outpost.
+  General admin_outpost_view items delete lore:
+  - ' '
+  - <yellow>Click to delete.
+  - ''
+  - ' <red>This action needs confirmation and'
+  - <red>after that it cannot be undone.
+  General admin_outpost_view items tp name: <color:#00AAAA><bold>Teleport to outpost.
+  General admin_outpost_view items tp lore:
+  - ' '
+  - ' <yellow>Click to teleport to outpost location.'
+  General admin_outpost_view items icon name: <green>Outpost icon
+  General admin_outpost_view items icon lore:
+  - ' '
+  - ' <yellow>Click to edit.'
+  General admin_outpost_view items advantages name: <green>Outpost advantages
+  General admin_outpost_view items advantages lore:
+  - ' '
+  - ' <yellow>Click to edit.'
+  General admin_outpost_view items back name: <red>Come back
+  General admin_outpost_view items back lore:
+  - ' '
+  - ' <yellow>Click to go back'
+  General admin_outpost_delete_confirm title: <red>Confirm delete the Outpost?
+  General admin_outpost_delete_confirm items fill name: ' '
+  General admin_outpost_delete_confirm items fill lore: [
+    ]
+  General admin_outpost_delete_confirm items confirm name: <green>YES, DELETE!
+  General admin_outpost_delete_confirm items confirm lore:
+  - ' '
+  - <yellow>Click to confirm.
+  General admin_outpost_delete_confirm items back name: <red>CANCEL
+  General admin_outpost_delete_confirm items back lore:
+  - ' '
+  - <yellow>Click to go back
+  General admin_outpost_home title: <#00AAAA>Outpost Admin Home
+  General admin_outpost_home items fill name: ' '
+  General admin_outpost_home items fill lore: [
+    ]
+  General admin_outpost_home items fill2 name: ' '
+  General admin_outpost_home items fill2 lore: [
+    ]
+  General admin_outpost_home items create name: <green>Start Outpost Creator
+  General admin_outpost_home items create lore:
+  - ' '
+  - <yellow>Click to start creator.
+  General admin_outpost_home items list name: <green>List of outposts
+  General admin_outpost_home items list lore:
+  - ' '
+  - <yellow>Click to open.
+  General admin_outpost_home items blocks name: <green>Loot blocks
+  General admin_outpost_home items blocks lore:
+  - ' '
+  - <yellow>Click to open.
+  General admin_outpost_home items timezone name: <green>Timezone
+  General admin_outpost_home items timezone lore:
+  - ' '
+  - <yellow>Click to open.
+  General admin_outpost_home items hologram name: <green>Holograms
+  General admin_outpost_home items hologram lore:
+  - ' '
+  - <yellow>Click to open.
+  General admin_outpost_home items extensions name: <green>Extensions
+  General admin_outpost_home items extensions lore:
+  - ' '
+  - <yellow>Click to open.
+  General admin_outpost_home items stats name: <green>Stats
+  General admin_outpost_home items stats lore:
+  - ' '
+  - <yellow>Click to open.
+  General admin_outpost_home items help name: <green>UOutpost help
+  General admin_outpost_home items help lore:
+  - ' '
+  - <yellow>Click to see command list.
+  General admin_outpost_home items sync_advanges name: <green>Sync Outpost Advanges
+  General admin_outpost_home items sync_advanges lore:
+  - ' '
+  - <yellow>Click to all outposts.
+  General admin_outpost_list title: <#00AAAA>Outpost List
+  General admin_outpost_list items fill name: ' '
+  General admin_outpost_list items fill lore: [
+    ]
+  General admin_outpost_list items current name: <green>%uoutpost_name%
+  General admin_outpost_list items current lore:
+  - ' '
+  - ' <yellow>Click to open.'
+  General admin_outpost_list items prev name: <green>Previous page.
+  General admin_outpost_list items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General admin_outpost_list items next name: <green>Next page.
+  General admin_outpost_list items next lore:
+  - ' '
+  - <yellow>Click to next
+  General admin_outpost_list items back name: <red>Come Back
+  General admin_outpost_list items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_advantage_list title: <#00AAAA>Advantages List
+  General admin_advantage_list items fill name: ' '
+  General admin_advantage_list items fill lore: [
+    ]
+  General admin_advantage_list items current name: <green>%uoutpost_advantages:{OUTPOST}:{id}:name%
+  General admin_advantage_list items current lore:
+  - ''
+  - ' <white>Enabled: <aqua>%uoutpost_advantages:{OUTPOST}:{id}:enabled%'
+  - ' <white>Multiplier: <aqua>%uoutpost_advantages:{OUTPOST}:{id}:multiplier%'
+  - ''
+  - ' <yellow>Click to open.'
+  General admin_advantage_list items prev name: <green>Previous page.
+  General admin_advantage_list items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General admin_advantage_list items next name: <green>Next page.
+  General admin_advantage_list items next lore:
+  - ' '
+  - <yellow>Click to next
+  General admin_advantage_list items back name: <red>Come Back
+  General admin_advantage_list items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_advantage_editwhitelist title: <#00AAAA>Adv. whitelist <gray>| <green>%uoutpost_advantages:{OUTPOST}:{id}:name%
+  General admin_advantage_editwhitelist items fill name: ' '
+  General admin_advantage_editwhitelist items fill lore: [
+    ]
+  General admin_advantage_editwhitelist items current name: <green>{advantage_whitelist_name}
+  General admin_advantage_editwhitelist items current lore:
+  - ''
+  - ' <yellow>Click to <red>REMOVE.'
+  General admin_advantage_editwhitelist items prev name: <green>Previous page.
+  General admin_advantage_editwhitelist items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General admin_advantage_editwhitelist items next name: <green>Next page.
+  General admin_advantage_editwhitelist items next lore:
+  - ' '
+  - <yellow>Click to next
+  General admin_advantage_editwhitelist items add name: <green>Add new
+  General admin_advantage_editwhitelist items add lore:
+  - ' '
+  - <yellow>Click to add.
+  General admin_advantage_editwhitelist items back name: <red>Come Back
+  General admin_advantage_editwhitelist items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_advantage_addwhitelist title: <#00AAAA>Adv. add whitelist <gray>| <green>%uoutpost_advantages:{OUTPOST}:{id}:name%
+  General admin_advantage_addwhitelist items fill name: ' '
+  General admin_advantage_addwhitelist items fill lore: [
+    ]
+  General admin_advantage_addwhitelist items current name: <green>{advantage_whitelist_name}
+  General admin_advantage_addwhitelist items current lore:
+  - ''
+  - ' <yellow>Click to <green>ADD.'
+  General admin_advantage_addwhitelist items prev name: <green>Previous page.
+  General admin_advantage_addwhitelist items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General admin_advantage_addwhitelist items next name: <green>Next page.
+  General admin_advantage_addwhitelist items next lore:
+  - ' '
+  - <yellow>Click to next
+  General admin_advantage_addwhitelist items back name: <red>Come Back
+  General admin_advantage_addwhitelist items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_advantage_edit title: <#00AAAA>Adv. Edit <gray>| <green>%uoutpost_advantages:{OUTPOST}:{id}:name%
+  General admin_advantage_edit items fill name: ' '
+  General admin_advantage_edit items fill lore: [
+    ]
+  General admin_advantage_edit items fill2 name: ' '
+  General admin_advantage_edit items fill2 lore: [
+    ]
+  General admin_advantage_edit items current name: <green>%uoutpost_advantages:{OUTPOST}:{id}:name%
+  General admin_advantage_edit items current lore:
+  - ''
+  - ' <white>Enabled: %uoutpost_advantages:{OUTPOST}:{id}:enabled%'
+  - ' <white>Multiplier: %uoutpost_advantages:{OUTPOST}:{id}:multiplier%'
+  General admin_advantage_edit items enable name: <green>Toggle advantage
+  General admin_advantage_edit items enable lore:
+  - ' '
+  - ' <white>Enabled: %uoutpost_advantages:{OUTPOST}:{id}:enabled%'
+  - ''
+  - <yellow>Click to toggle.
+  General admin_advantage_edit items multiplier name: <green>Multiplier
+  General admin_advantage_edit items multiplier lore:
+  - ' '
+  - ' <white>Multiplier: %uoutpost_advantages:{OUTPOST}:{id}:multiplier%'
+  - ''
+  - <yellow>Click to edit
+  General admin_advantage_edit items whitelist name: <green>Whitelist
+  General admin_advantage_edit items whitelist lore:
+  - ' '
+  - <yellow>Click to edit.
+  General admin_advantage_edit items back name: <red>Come Back
+  General admin_advantage_edit items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_advantage_editmultiplier title: <#00AAAA>Adv. multiplier <gray>| <green>%uoutpost_advantages:{OUTPOST}:{id}:name%
+  General admin_advantage_editmultiplier items fill name: ' '
+  General admin_advantage_editmultiplier items fill lore: [
+    ]
+  General admin_advantage_editmultiplier items fill2 name: ' '
+  General admin_advantage_editmultiplier items fill2 lore: [
+    ]
+  General admin_advantage_editmultiplier items current name: <green>Multiplier amount <aqua>%uoutpost_advantages:{OUTPOST}:{id}:multiplier%
+  General admin_advantage_editmultiplier items current lore:
+  - ' '
+  - ' <white>Multiplier: <aqua>%uoutpost_advantages:{OUTPOST}:{id}:multiplier%'
+  - ' '
+  - ' <yellow>Increase or decrease the number of'
+  - <yellow>multiplier using the side buttons
+  General admin_advantage_editmultiplier items add name: <aqua><bold>Add +0.1
+  General admin_advantage_editmultiplier items add lore:
+  - ' '
+  - ' <yellow>Click to increase.'
+  General admin_advantage_editmultiplier items remove name: <red><bold>Remove -0.1
+  General admin_advantage_editmultiplier items remove lore:
+  - ' '
+  - ' <yellow>Click to decrease.'
+  General admin_advantage_editmultiplier items add2 name: <aqua><bold>Add +0.5
+  General admin_advantage_editmultiplier items add2 lore:
+  - ' '
+  - ' <yellow>Click to increase.'
+  General admin_advantage_editmultiplier items remove2 name: <red><bold>Remove -0.5
+  General admin_advantage_editmultiplier items remove2 lore:
+  - ' '
+  - ' <yellow>Click to decrease.'
+  General admin_advantage_editmultiplier items back name: <red>Come Back
+  General admin_advantage_editmultiplier items back lore:
+  - ' '
+  - <red>Click to go back.
+  General admin_outpost_timezone title: <#00AAAA>Outpost Timezone <gray>| <red>{amount}
+  General admin_outpost_timezone items fill name: ' '
+  General admin_outpost_timezone items fill lore: [
+    ]
+  General admin_outpost_timezone items current name: <green>{timezone}
+  General admin_outpost_timezone items current lore:
+  - ' '
+  - ' <yellow>Click to select.'
+  General admin_outpost_timezone items using name: '<green>Current: {current_timezone}'
+  General admin_outpost_timezone items using lore:
+  - ' '
+  - ' <yellow>This is the current timezone, this'
+  - '<yellow>timezone starts the events. '
+  - ' <yellow>You can select which best fits your country.'
+  General admin_outpost_timezone items prev name: <green>Previous page.
+  General admin_outpost_timezone items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General admin_outpost_timezone items next name: <green>Next page.
+  General admin_outpost_timezone items next lore:
+  - ' '
+  - <yellow>Click to next
+  General admin_outpost_timezone items back name: <red>Come Back
+  General admin_outpost_timezone items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_outpost_hologram title: <#00AAAA>Outpost Holograms <gray>
+  General admin_outpost_hologram items fill name: ' '
+  General admin_outpost_hologram items fill lore: [
+    ]
+  General admin_outpost_hologram items current name: <green>{name}
+  General admin_outpost_hologram items current lore:
+  - ' '
+  - ' <white>World: <aqua>{world}'
+  - ' <white>Type: <aqua>{type}'
+  - ' <white>Time: <aqua>{time}'
+  - ''
+  - <yellow>LEFT-CLICK to teleport.
+  - <red>RIGHT-CLICK to remove.
+  General admin_outpost_hologram items create name: <green>Create a new Hologram (random name).
+  General admin_outpost_hologram items create lore:
+  - ' '
+  - <yellow>Click to start.
+  General admin_outpost_hologram items prev name: <green>Previous page.
+  General admin_outpost_hologram items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General admin_outpost_hologram items next name: <green>Next page.
+  General admin_outpost_hologram items next lore:
+  - ' '
+  - <yellow>Click to next
+  General admin_outpost_hologram items back name: <red>Come Back
+  General admin_outpost_hologram items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_outpost_hologram_creator_type title: <#00AAAA>Select holo type
+  General admin_outpost_hologram_creator_type items fill name: ' '
+  General admin_outpost_hologram_creator_type items fill lore: [
+    ]
+  General admin_outpost_hologram_creator_type items fill2 name: ' '
+  General admin_outpost_hologram_creator_type items fill2 lore: [
+    ]
+  General admin_outpost_hologram_creator_type items player name: <green>PLAYER.
+  General admin_outpost_hologram_creator_type items player lore:
+  - ' '
+  - <yellow>Click to select.
+  General admin_outpost_hologram_creator_type items group name: <green>GROUP.
+  General admin_outpost_hologram_creator_type items group lore:
+  - ' '
+  - <yellow>Click to select.
+  General admin_outpost_hologram_creator_type items back name: <red>Come Back
+  General admin_outpost_hologram_creator_type items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_outpost_hologram_creator_time title: <#00AAAA>Select time
+  General admin_outpost_hologram_creator_time items fill name: ' '
+  General admin_outpost_hologram_creator_time items fill lore: [
+    ]
+  General admin_outpost_hologram_creator_time items fill2 name: ' '
+  General admin_outpost_hologram_creator_time items fill2 lore: [
+    ]
+  General admin_outpost_hologram_creator_time items current name: <green>{time}.
+  General admin_outpost_hologram_creator_time items current lore:
+  - ' '
+  - <yellow>Click to select and create.
+  General admin_outpost_hologram_creator_time items back name: <red>Come Back
+  General admin_outpost_hologram_creator_time items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_outpost_stats_selector title: <#00AAAA>Select status type
+  General admin_outpost_stats_selector items fill name: ' '
+  General admin_outpost_stats_selector items fill lore: [
+    ]
+  General admin_outpost_stats_selector items fill2 name: ' '
+  General admin_outpost_stats_selector items fill2 lore: [
+    ]
+  General admin_outpost_stats_selector items player name: <green>PLAYER.
+  General admin_outpost_stats_selector items player lore:
+  - ' '
+  - <yellow>Click to select.
+  General admin_outpost_stats_selector items group name: <green>GROUP.
+  General admin_outpost_stats_selector items group lore:
+  - ' '
+  - <yellow>Click to select.
+  General admin_outpost_stats_selector items back name: <red>Come Back
+  General admin_outpost_stats_selector items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_outpost_stats_list title: <#00AAAA>Outpost Status <gray>| {type} <dark_gray>({time})
+  General admin_outpost_stats_list items fill name: ' '
+  General admin_outpost_stats_list items fill lore: [
+    ]
+  General admin_outpost_stats_list items current name: <green>{data}
+  General admin_outpost_stats_list items current lore:
+  - ' '
+  - ' <white>Type: <aqua>{type}'
+  - ' <white>Captures amount: <aqua>{amount}'
+  - ''
+  - <red>RIGHT-CLICK to remove.
+  General admin_outpost_stats_list items addplayer name: <green>Add an player stats.
+  General admin_outpost_stats_list items addplayer lore:
+  - ' '
+  - <yellow>Click to select Player
+  General admin_outpost_stats_list items prev name: <green>Previous page.
+  General admin_outpost_stats_list items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General admin_outpost_stats_list items next name: <green>Next page.
+  General admin_outpost_stats_list items next lore:
+  - ' '
+  - <yellow>Click to next
+  General admin_outpost_stats_list items back name: <red>Come Back
+  General admin_outpost_stats_list items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_outpost_send_icon title: <#00AAAA>Outpost icon upload <gray>| <aqua>%uoutpost_name%
+  General admin_outpost_send_icon items fill name: ' '
+  General admin_outpost_send_icon items fill lore: [
+    ]
+  General admin_outpost_send_icon items fill2 name: ' '
+  General admin_outpost_send_icon items fill2 lore: [
+    ]
+  General admin_outpost_send_icon items fill3 name: ' <blue>Place your item here.'
+  General admin_outpost_send_icon items fill3 lore: [
+    ]
+  General admin_outpost_send_icon items current name: ''
+  General admin_outpost_send_icon items current lore: [
+    ]
+  General admin_outpost_send_icon items save name: <green>Save Icon.
+  General admin_outpost_send_icon items save lore:
+  - ' '
+  - <yellow>Click to send and Save.
+  General admin_outpost_send_icon items back name: <red>Cancel and back
+  General admin_outpost_send_icon items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_outpost_lootblock title: <#00AAAA>Outpost blocks
+  General admin_outpost_lootblock items fill name: ' '
+  General admin_outpost_lootblock items fill lore: [
+    ]
+  General admin_outpost_lootblock items enabled name: <green>Enabled Key.
+  General admin_outpost_lootblock items enabled lore:
+  - ' '
+  - ' <white>State: <aqua>%uoutpost_usekey%'
+  - ' '
+  - <yellow>Click to change.
+  General admin_outpost_lootblock items keywand name: <green>Get Key Wand.
+  General admin_outpost_lootblock items keywand lore:
+  - ' '
+  - ' <yellow>Use to select the blocks/chest that'
+  - <yellow>will be used to collect rewards
+  General admin_outpost_lootblock items current name: '<green>Num: {num}'
+  General admin_outpost_lootblock items current lore:
+  - ' '
+  - ' <white>World: <aqua>{world}'
+  - ''
+  - <yellow>LEFT-CLICK to teleport.
+  - <red>RIGHT-CLICK to remove.
+  General admin_outpost_lootblock items next name: <green>Next page
+  General admin_outpost_lootblock items next lore:
+  - ' '
+  - ' <yellow>Click to next page'
+  General admin_outpost_lootblock items prev name: <green>Previous page
+  General admin_outpost_lootblock items prev lore:
+  - ' '
+  - ' <yellow>Click to previous page'
+  General admin_outpost_lootblock items back name: <red>Cancel and back
+  General admin_outpost_lootblock items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General player_outpost_home title: <#00AAAA>Outpost Home
+  General player_outpost_home items fill name: ' '
+  General player_outpost_home items fill lore: [
+    ]
+  General player_outpost_home items fill2 name: ' '
+  General player_outpost_home items fill2 lore: [
+    ]
+  General player_outpost_home items advantages name: <green>Advantages.
+  General player_outpost_home items advantages lore:
+  - ' '
+  - ' <white>Members involved: <aqua>%uoutpost_player_involved_amount%'
+  - ' <white>Total Captures: <aqua>%uoutpost_player_captures_amount%'
+  - ' <white>Total Advantages: <aqua>%uoutpost_advantages_amount%'
+  - ''
+  - ' <yellow>Click to expand.'
+  General player_outpost_home items stats name: <green>Player stats.
+  General player_outpost_home items stats lore:
+  - ' '
+  - ' <yellow>Click to open.'
+  General player_outpost_home items commands name: <green>Outpost help.
+  General player_outpost_home items commands lore:
+  - ' '
+  - ' <yellow>Click to see command list.'
+  General player_outpost_loot title: <#00AAAA>Outpost Loots <gray>| <aqua>%uoutpost_name%
+  General player_outpost_loot items fill name: ' '
+  General player_outpost_loot items fill lore: [
+    ]
+  General player_outpost_loot items info name: <green>About loots.
+  General player_outpost_loot items info lore:
+  - ' '
+  - <yellow>You can collect the items you prefer
+  - <yellow>on this page, items that are not
+  - <yellow>collected will be discarded.
+  - ''
+  - ' <red><bold>Attention:</bold> When this page is closed'
+  - <red>it can no longer be opened!
+  General player_outpost_loot items back name: <red>Come Back
+  General player_outpost_loot items back lore:
+  - ' '
+  - <red>Click to go back.
+  General player_outpost_stats title: <#00AAAA>Player stats <gray>| <aqua>%uoutpost_player%
+  General player_outpost_stats items fill name: ' '
+  General player_outpost_stats items fill lore: [
+    ]
+  General player_outpost_stats items fill2 name: ' '
+  General player_outpost_stats items fill2 lore: [
+    ]
+  General player_outpost_stats items player name: <green>Individual stats.
+  General player_outpost_stats items player lore:
+  - ' '
+  - ' <white>Player: <aqua>{player}'
+  - ' <white>Total Captures: <aqua>{wins}'
+  - ' <white>Total Time: <aqua>{time}'
+  General player_outpost_stats items group name: <green>Group stats.
+  General player_outpost_stats items group lore:
+  - ' '
+  - ' <white>Current group: <aqua>{group}'
+  - ' <white>Total Captures: <aqua>{wins}'
+  - ' <white>Total Time: <aqua>{time}'
+  General player_outpost_stats items detail name: <green>Detailed status.
+  General player_outpost_stats items detail lore:
+  - ' '
+  - ' <yellow>Click to open'
+  General player_outpost_stats items back name: <red>Come Back
+  General player_outpost_stats items back lore:
+  - ' '
+  - <red>Click to go back.
+  General player_outpost_advantages title: <#00AAAA>Player advantages <gray>| <aqua>%uoutpost_player%
+  General player_outpost_advantages items fill name: ' '
+  General player_outpost_advantages items fill lore: [
+    ]
+  General player_outpost_advantages items fill2 name: ' '
+  General player_outpost_advantages items fill2 lore: [
+    ]
+  General player_outpost_advantages items prev name: <green>Previous page.
+  General player_outpost_advantages items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General player_outpost_advantages items next name: <green>Next page.
+  General player_outpost_advantages items next lore:
+  - ' '
+  - <yellow>Click to next
+  General player_outpost_advantages items current name: <green>%uoutpost_advantages:{OUTPOST}:{id}:name%
+  General player_outpost_advantages items current lore:
+  - ' '
+  - ' <white>Outpost: <green>%uoutpost_advantages:{OUTPOST}:{id}:outpostname%'
+  - ' <white>Multiplier: <aqua>+%uoutpost_advantages:{OUTPOST}:{id}:multiplier%'
+  - ' <white>Whitelist: <aqua>%uoutpost_advantages:{OUTPOST}:{id}:whitelist%'
+  General player_outpost_advantages items captures name: <green>Outpost Captures <gray>%uoutpost_player_captures_amount%
+  General player_outpost_advantages items captures lore:
+  - ' '
+  - ' <white>Captures: <aqua>%uoutpost_player_captures%'
+  General player_outpost_advantages items involvement name: <green>Players involved <gray>(%uoutpost_player_involved_amount%)
+  General player_outpost_advantages items involvement lore:
+  - ' '
+  - ' <white>Group: <aqua>%uoutpost_player_group%'
+  - ' <aqua>%uoutpost_player_involved%'
+  General player_outpost_advantages items back name: <red>Come Back
+  General player_outpost_advantages items back lore:
+  - ' '
+  - <red>Click to go back.
+  General player_outpost_stats_detail title: <#00AAAA>Detailed status <gray>| <aqua>%uoutpost_player%
+  General player_outpost_stats_detail items fill name: ' '
+  General player_outpost_stats_detail items fill lore: [
+    ]
+  General player_outpost_stats_detail items prev name: <green>Previous page.
+  General player_outpost_stats_detail items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General player_outpost_stats_detail items next name: <green>Next page.
+  General player_outpost_stats_detail items next lore:
+  - ' '
+  - <yellow>Click to next
+  General player_outpost_stats_detail items current name: <green>{type} Captures.
+  General player_outpost_stats_detail items current lore:
+  - ' '
+  - ' <white>Type: <aqua>{type}'
+  - ' <white>Captures: <aqua>{data}'
+  - ' <white>Date: <aqua>{date}'
+  - ' <white>Time: <aqua>{time}'
+  - ' <white>Outpost: <aqua>{name}'
+  General player_outpost_stats_detail items back name: <red>Come Back
+  General player_outpost_stats_detail items back lore:
+  - ' '
+  - <red>Click to go back.
+  General player_outpost_events title: <#00AAAA>Outpost Events
+  General player_outpost_events items fill name: ' '
+  General player_outpost_events items fill lore: [
+    ]
+  General player_outpost_events items fill2 name: ' '
+  General player_outpost_events items fill2 lore: [
+    ]
+  General player_outpost_events items all name: <green>All events.
+  General player_outpost_events items all lore:
+  - ' '
+  - ' <yellow>Click to open'
+  General player_outpost_events items back name: <red>Come Back
+  General player_outpost_events items back lore:
+  - ' '
+  - <red>Click to go back.
+  General player_outpost_events_next title: <#00AAAA>Upcoming events
+  General player_outpost_events_next items fill name: ' '
+  General player_outpost_events_next items fill lore: [
+    ]
+  General player_outpost_events_next items prev name: <green>Previous page.
+  General player_outpost_events_next items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General player_outpost_events_next items next name: <green>Next page.
+  General player_outpost_events_next items next lore:
+  - ' '
+  - <yellow>Click to next
+  General player_outpost_events_next items current name: <green>{name}.
+  General player_outpost_events_next items current lore:
+  - ' '
+  - ' <white>outpost: <aqua>{name}'
+  - ' <white>Frequency: <aqua>{type}'
+  - ' <white>Day: <aqua>{day}'
+  - ' <white>Hour: <aqua>{hour}'
+  General player_outpost_events_next items back name: <red>Come Back
+  General player_outpost_events_next items back lore:
+  - ' '
+  - <red>Click to go back.
+  General player_outpost_events_all title: <#00AAAA>All events
+  General player_outpost_events_all items fill name: ' '
+  General player_outpost_events_all items fill lore: [
+    ]
+  General player_outpost_events_all items prev name: <green>Previous page.
+  General player_outpost_events_all items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General player_outpost_events_all items next name: <green>Next page.
+  General player_outpost_events_all items next lore:
+  - ' '
+  - <yellow>Click to next
+  General player_outpost_events_all items current name: <green>{name}.
+  General player_outpost_events_all items current lore:
+  - ' '
+  - ' <white>outpost: <aqua>{name}'
+  - ' <white>Frequency: <aqua>{type}'
+  - ' <white>Day: <aqua>{day}'
+  - ' <white>Hour: <aqua>{hour}'
+  General player_outpost_events_all items back name: <red>Come Back
+  General player_outpost_events_all items back lore:
+  - ' '
+  - <red>Click to go back.
+  General player_outpost_view title: <#00AAAA>Outpost <aqua>%uoutpost_name%
+  General player_outpost_view items fill name: ' '
+  General player_outpost_view items fill lore: [
+    ]
+  General player_outpost_view items info name: '<yellow>Outpost Information:'
+  General player_outpost_view items info lore:
+  - ' '
+  - ' <white>Name: <aqua>%uoutpost_name%'
+  - ' <white>Commands: <aqua>%uoutpost_commands_amount%'
+  - ' <white>Loots: <aqua>%uoutpost_loots_amount%'
+  General player_outpost_view items loots name: <green>Outpost Loots.
+  General player_outpost_view items loots lore:
+  - ' '
+  - ' <white>Amount: <aqua>%uoutpost_loots_amount%'
+  - ''
+  - ' <yellow>Click to open.'
+  General admin_outpost_loottype_edit title: '<#00AAAA>Loot type: <aqua>%uoutpost_loot_type% <gray>| <aqua>%uoutpost_name%'
+  General admin_outpost_loottype_edit items fill name: ' '
+  General admin_outpost_loottype_edit items fill lore: [
+    ]
+  General admin_outpost_loottype_edit items fill2 name: ' '
+  General admin_outpost_loottype_edit items fill2 lore: [
+    ]
+  General admin_outpost_loottype_edit items current name: <green>Key Amount <aqua>(%uoutpost_keyreceive_amount%)
+  General admin_outpost_loottype_edit items current lore:
+  - ' '
+  - ' <white>Amount: <aqua>%uoutpost_keyreceive_amount%'
+  - ' '
+  - ' <yellow>This is the amount of keys given to'
+  - <yellow>the winners.
+  - ' <yellow>Use the side buttons to change.'
+  General admin_outpost_loottype_edit items add name: <aqua><bold>Add +1
+  General admin_outpost_loottype_edit items add lore:
+  - ' '
+  - ' <yellow>Click to add.'
+  General admin_outpost_loottype_edit items remove name: <red><bold>Remove -1
+  General admin_outpost_loottype_edit items remove lore:
+  - ' '
+  - ' <yellow>Click to remove.'
+  General admin_outpost_loottype_edit items inv name: <green>Change loot type
+  General admin_outpost_loottype_edit items inv lore:
+  - ' '
+  - ' <white>Current: <aqua>%uoutpost_loot_type%'
+  - ' '
+  - ' <red><bold>INV: </bold><yellow>Takes an attempt to add the items '
+  - <yellow>saved in loot to the players inventory,
+  - '<yellow>if it doesnt fit it will be dropped '
+  - <yellow>on the ground.
+  - ''
+  - ' <yellow>Click to change.'
+  General admin_outpost_loottype_edit items key name: <green>Change loot type
+  General admin_outpost_loottype_edit items key lore:
+  - ' '
+  - ' <white>Current: <aqua>%uoutpost_loot_type%'
+  - ' <white>Amount: <aqua>%uoutpost_keyreceive_amount%'
+  - ' '
+  - ' <red><bold>KEY: </bold><yellow>Keys are given to players at the end '
+  - <yellow>of matches. with this key players can redeem
+  - <yellow>items in Loot Blocks.
+  - ''
+  - ' <yellow>Click to change.'
+  General admin_outpost_loottype_edit items drop name: <green>Change loot type
+  General admin_outpost_loottype_edit items drop lore:
+  - ' '
+  - ' <white>Current: <aqua>%uoutpost_loot_type%'
+  - ' '
+  - '<red><bold>DROP: </bold><yellow>Loot items will be dropped directly'
+  - '<yellow>on the ground as close as possible '
+  - <yellow>to the player.
+  - ''
+  - ' <yellow>Click to change.'
+  General admin_outpost_loottype_edit items disabled name: <green>Change loot type
+  General admin_outpost_loottype_edit items disabled lore:
+  - ' '
+  - ' <white>Current: <aqua>%uoutpost_loot_type%'
+  - ' '
+  - '<red><bold>DISABLED: </bold><yellow>This option turns off the loot system.'
+  - ''
+  - ' <yellow>Click to change.'
+  General admin_outpost_loottype_edit items back name: <red>Come Back
+  General admin_outpost_loottype_edit items back lore:
+  - ' '
+  - <red>Click to go back.
+  General admin_outpost_loot_chance title: '<#00AAAA>Chance: {current} <gray>| <aqua>%uoutpost_name%'
+  General admin_outpost_loot_chance items fill name: ' '
+  General admin_outpost_loot_chance items fill lore: [
+    ]
+  General admin_outpost_loot_chance items fill2 name: ' '
+  General admin_outpost_loot_chance items fill2 lore: [
+    ]
+  General admin_outpost_loot_chance items current name: <green>{chance}%
+  General admin_outpost_loot_chance items current lore:
+  - ' '
+  - <yellow>Use the buttons <red><bold>below</bold> <yellow>to change.
+  General admin_outpost_loot_chance items add name: <green>PERCENT +5.
+  General admin_outpost_loot_chance items add lore:
+  - ' '
+  - <yellow>Click to decrease
+  General admin_outpost_loot_chance items remove name: <red>PERCENT -5.
+  General admin_outpost_loot_chance items remove lore:
+  - ' '
+  - <yellow>Click to increase
+  General admin_outpost_loot_chance items back name: <red>Come Back
+  General admin_outpost_loot_chance items back lore:
+  - ' '
+  - <yellow>Click to go back.
+  General admin_outpost_proximity_edit title: <#00AAAA>Proximity setting <gray>| <aqua>%uoutpost_name%
+  General admin_outpost_proximity_edit items fill name: ' '
+  General admin_outpost_proximity_edit items fill lore: [
+    ]
+  General admin_outpost_proximity_edit items fill2 name: ' '
+  General admin_outpost_proximity_edit items fill2 lore: [
+    ]
+  General admin_outpost_proximity_edit items current name: <green>Blocks Amount <aqua>(%uoutpost_proximity_size%)
+  General admin_outpost_proximity_edit items current lore:
+  - ' '
+  - ' <white>Blocks: <aqua>%uoutpost_proximity_size%'
+  - ' '
+  - ' <yellow>Increase or decrease the number of'
+  - <yellow>blocks around the area that will trigger
+  - <yellow>alerts using the side buttons
+  General admin_outpost_proximity_edit items add name: <aqua><bold>Add +1
+  General admin_outpost_proximity_edit items add lore:
+  - ' '
+  - ' <yellow>Click to increase.'
+  General admin_outpost_proximity_edit items remove name: <red><bold>Remove -1
+  General admin_outpost_proximity_edit items remove lore:
+  - ' '
+  - ' <yellow>Click to decrease.'
+  General admin_outpost_proximity_edit items add2 name: <aqua><bold>Add +8
+  General admin_outpost_proximity_edit items add2 lore:
+  - ' '
+  - ' <yellow>Click to increase.'
+  General admin_outpost_proximity_edit items remove2 name: <red><bold>Remove -8
+  General admin_outpost_proximity_edit items remove2 lore:
+  - ' '
+  - ' <yellow>Click to decrease.'
+  General admin_outpost_proximity_edit items enabled name: <green>Toggle proximity alerts
+  General admin_outpost_proximity_edit items enabled lore:
+  - ' '
+  - ' <white>Type: <aqua>%uoutpost_proximity_type%'
+  - ' <white>Amount: <aqua>%uoutpost_proximity_size%'
+  - ' '
+  - ' <yellow>This is the alert sent when'
+  - <yellow>players approach event areas.
+  General admin_outpost_proximity_edit items back name: <red>Come Back
+  General admin_outpost_proximity_edit items back lore:
+  - ' '
+  - <red>Click to go back.
+  General admin_outpost_capture_edit title: <#00AAAA>Capture setting <gray>| <aqua>%uoutpost_name%
+  General admin_outpost_capture_edit items fill name: ' '
+  General admin_outpost_capture_edit items fill lore: [
+    ]
+  General admin_outpost_capture_edit items fill2 name: ' '
+  General admin_outpost_capture_edit items fill2 lore: [
+    ]
+  General admin_outpost_capture_edit items current name: <green>Seconds to capture <aqua>(%uoutpost_capture_time%)
+  General admin_outpost_capture_edit items current lore:
+  - ' '
+  - ' <white>Seconds: <aqua>%uoutpost_capture_time%'
+  - ' <white>Time: <aqua>%uoutpost_capture_time_formated%'
+  - ' '
+  - ' <yellow>Increase or decrease the amount'
+  - '<yellow>in seconds of outpost capture on '
+  - <yellow>the side buttons.
+  General admin_outpost_capture_edit items add name: <aqua><bold>Add +5s
+  General admin_outpost_capture_edit items add lore:
+  - ' '
+  - ' <yellow>Click to increase.'
+  General admin_outpost_capture_edit items remove name: <red><bold>Remove -5s
+  General admin_outpost_capture_edit items remove lore:
+  - ' '
+  - ' <yellow>Click to decrease.'
+  General admin_outpost_capture_edit items add2 name: <aqua><bold>Add +10s
+  General admin_outpost_capture_edit items add2 lore:
+  - ' '
+  - ' <yellow>Click to increase.'
+  General admin_outpost_capture_edit items remove2 name: <red><bold>Remove -10s
+  General admin_outpost_capture_edit items remove2 lore:
+  - ' '
+  - ' <yellow>Click to decrease.'
+  General admin_outpost_capture_edit items back name: <red>Come Back
+  General admin_outpost_capture_edit items back lore:
+  - ' '
+  - <red>Click to go back.
+  General admin_outpost_extension title: <#00AAAA>Extensions Settings
+  General admin_outpost_extension items fill name: ' '
+  General admin_outpost_extension items fill lore: [
+    ]
+  General admin_outpost_extension items fill2 name: ' '
+  General admin_outpost_extension items fill2 lore: [
+    ]
+  General admin_outpost_extension items all name: <green>All extensions
+  General admin_outpost_extension items all lore:
+  - ' '
+  - <yellow>Click to open
+  General admin_outpost_extension items instaled name: <green>Instaled extensions
+  General admin_outpost_extension items instaled lore:
+  - ' '
+  - <yellow>Click to open.
+  General admin_outpost_extension items reload name: <green>Reload extensions
+  General admin_outpost_extension items reload lore:
+  - ' '
+  - <yellow>Click to reload.
+  General admin_outpost_extension items back name: <red>Come Back
+  General admin_outpost_extension items back lore:
+  - ' '
+  - <red>Click to go back.
+  General admin_outpost_extension_list title: <#00AAAA>Extensions <gray>| <aqua>{type}
+  General admin_outpost_extension_list items fill name: ' '
+  General admin_outpost_extension_list items fill lore: [
+    ]
+  General admin_outpost_extension_list items current_all name: <green>{name}
+  General admin_outpost_extension_list items current_all lore:
+  - ' '
+  - ' <white>Name: <aqua>{name}'
+  - ' <white>State: <aqua>{state}'
+  - ' <white>Downloaded: <aqua>{downloaded}'
+  - ''
+  - <yellow>LEFT-CLICK to download.
+  General admin_outpost_extension_list items current_instaled name: <green>{name}
+  General admin_outpost_extension_list items current_instaled lore:
+  - ' '
+  - ' <white>Name: <aqua>{name}'
+  - ' <white>Status: <aqua>{status}'
+  - ' <white>Author: <aqua>{author}'
+  - ' <white>Version: <aqua>{version}'
+  - ' <white>Description: <aqua>{description}'
+  - ''
+  - <yellow>LEFT-CLICK to update.
+  General admin_outpost_extension_list items prev name: <green>Previous page.
+  General admin_outpost_extension_list items prev lore:
+  - ' '
+  - <yellow>Click to previous.
+  General admin_outpost_extension_list items next name: <green>Next page.
+  General admin_outpost_extension_list items next lore:
+  - ' '
+  - <yellow>Click to next
+  General admin_outpost_extension_list items back name: <red>Come Back
+  General admin_outpost_extension_list items back lore:
+  - ' '
+  - <yellow>Click to go back.
+ 
+ 
+ # TRANSLATIONS OF THE COMMANDS
+ 
+COMMANDS:
+  outpost help show on_help: <click:run_command:"/outpost help"><hover:show_text:'<green>Click to view help of Outpost.'> <#55ffff>/outpost help <gray>-<yellow> Show help menu.</hover></click>
+  outpost help show on_success: '%tag% <green>You are seeing the help!'
+  outpost help show on_error: '%tag%<red>Error to show text.'
+  outpost help show on_usage: '%tag% <red>Use <#55ffff>/outpost help'
+  outpost cancel show on_help: <click:run_command:"/outpost cancel "><hover:show_text:'<green>Click to cancel pending actions'> <#55ffff>/outpost cancel <gray>-<yellow> Cancel pending actions</hover></click>
+  outpost cancel show on_success: '%tag% <green>You have canceld a new outpost!'
+  outpost cancel show on_error: '%tag% <red>Error canceling action.'
+  outpost cancel show on_usage: '%tag% <red>Use <#55ffff>/outpost cancel'
+  outpost stats show on_help: <click:suggest_command:"/outpost stats "><hover:show_text:'<green>Click to show outpost stats'> <#55ffff>/outpost stats <light_purple>(-gui) <gray>-<yellow> See your status</hover></click>
+  outpost stats show on_success: '%tag% <green>Success!'
+  outpost stats show on_error: '%tag% <red>Error showing status.'
+  outpost stats show on_usage: '%tag% <red>Use <#55ffff>/outpost stats <light_purple>(-gui)'
+  outpost events show on_help: <click:suggest_command:"/outpost events "><hover:show_text:'<green>Click to show outpost events'> <#55ffff>/outpost events <light_purple>(-gui) <gray>-<yellow> Show outpost events</hover></click>
+  outpost events show on_success: '%tag% <green>Success!'
+  outpost events show on_error: '%tag% <red>Error showing events.'
+  outpost events show on_usage: '%tag% <red>Use <#55ffff>/outpost events <light_purple>(-gui)'
+  outpost events subcommands next: <click:suggest_command:"/outpost events next "><hover:show_text:'<green>Click to view.'> <#55ffff>/outpost events next <gray>-<yellow> See nexts events.</hover></click>
+  outpost events subcommands next show on_success: '%tag% <green>Successfully.'
+  outpost events subcommands next show on_error: '%tag% <red>Error showing nexts events.'
+  outpost events subcommands next show on_usage: '%tag% <red>Use <#55ffff>/outpost events next'
+  outpost events subcommands all: <click:suggest_command:"/outpost events all "><hover:show_text:'<green>Click to view.'> <#55ffff>/outpost events all <gray>-<yellow> See all events.</hover></click>
+  outpost events subcommands all show on_success: '%tag% <green>Successfully.'
+  outpost events subcommands all show on_error: '%tag% <red>Error showing all events.'
+  outpost events subcommands all show on_usage: '%tag% <red>Use <#55ffff>/outpost events all'
+  outpost info show on_help: <click:suggest_command:"/outpost info "><hover:show_text:'<green>Click to show outpost info'> <#55ffff>/outpost info <red><name> <light_purple>(-gui) <gray>-<yellow> Show outpost info</hover></click>
+  outpost info show on_success: '%tag% <green>Success!'
+  outpost info show on_error: '%tag% <red>Error showing info.'
+  outpost info show on_usage: '%tag% <red>Use <#55ffff>/outpost info <red><name> <light_purple>(-gui)'
+  outpost loots show on_help: <click:suggest_command:"/outpost loots "><hover:show_text:'<green>Click to show outpost loots'> <#55ffff>/outpost loots <red><name> <light_purple>(-gui) <gray>-<yellow> Show outpost loots</hover></click>
+  outpost loots show on_success: '%tag% <green>Success!'
+  outpost loots show on_error: '%tag% <red>Error showing loots.'
+  outpost loots show on_usage: '%tag% <red>Use <#55ffff>/outpost loots <red><name> <light_purple>(-gui)'
+  outpost advantages show on_help: <click:suggest_command:"/outpost advantages "><hover:show_text:'<green>Click to show player advantages'> <#55ffff>/outpost advantages <light_purple>(-gui) <gray>-<yellow> Show advantages</hover></click>
+  outpost advantages show on_success: '%tag% <green>Success!'
+  outpost advantages show on_error: '%tag% <red>Error showing advantages.'
+  outpost advantages show on_usage: '%tag% <red>Use <#55ffff>/outpost advantages <light_purple>(-gui)'
+  uoutpost help show on_help: <click:run_command:"/uoutpost help"><hover:show_text:'<green>Click to view help of Outpost.'> <#55ffff>/uoutpost help <gray>-<yellow> Show help menu.</hover></click>
+  uoutpost help show on_success: '%tag% <green>You are seeing the help!'
+  uoutpost help show on_error: '%tag%<red>Error to show text.'
+  uoutpost help show on_usage: '%tag% <red>Use <#55ffff>/uoutpost help'
+  uoutpost reload show on_help: <click:run_command:"/uoutpost reload"><hover:show_text:'<green>Click to reload.'> <#55ffff>/uoutpost reload <gray>-<yellow> Reload the plugin.</hover></click>
+  uoutpost reload show on_success: '%tag% <green>Plugin reloaded successfully <gray>(%time%).'
+  uoutpost reload show on_error: '%tag% <red>Error reloading settings.'
+  uoutpost reload show on_usage: '%tag% <red>Use <#55ffff>/uoutpost reload'
+  uoutpost tp show on_help: <click:suggest_command:"/uoutpost tp "><hover:show_text:'<green>Click to teleport to outpost.'> <#55ffff>/uoutpost tp <red><name> <gray>-<yellow> Teleport to outpost.</hover></click>
+  uoutpost tp show on_success: '%tag% <green>You were teleported to the location of the outpost.'
+  uoutpost tp show on_error: '%tag% <red>An error occurred while teleport to the outpost.'
+  uoutpost tp show on_usage: '%tag% <red>Use <#55ffff>/uoutpost tp <red><name>'
+  uoutpost wand show on_help: <click:run_command:"/uoutpost wand"><hover:show_text:'<green>Click to get wand.'> <#55ffff>/uoutpost wand <gray>-<yellow> Get outpost wand.</hover></click>
+  uoutpost wand show on_success: '%tag% <green>You have received the wand of outpost.'
+  uoutpost wand show on_error: '%tag% <red>Error receiving the wand.'
+  uoutpost wand show on_usage: '%tag% <red>Use <#55ffff>/uoutpost wand'
+  uoutpost create show on_help: <click:suggest_command:"/uoutpost create "><hover:show_text:'<green>Click to create a new Outpost.'> <#55ffff>/uoutpost create <red><name> <gray>-<yellow> Create a new Outpost.</hover></click>
+  uoutpost create show on_success: '%tag% <green>New Outpost created successfully.'
+  uoutpost create show on_error: '%tag% <red>Error creating new Outpost.'
+  uoutpost create show on_usage: '%tag% <red>Use <#55ffff>/uoutpost create <red><name>'
+  uoutpost move show on_help: <click:suggest_command:"/uoutpost move "><hover:show_text:'<green>Click to move a outpost.'> <#55ffff>/uoutpost move <red><name> <gray>-<yellow> Move a outpost.</hover></click>
+  uoutpost move show on_success: '%tag% <green>The command was successfully moved to new location.'
+  uoutpost move show on_error: '%tag% <red>There was an error moving the outpost.'
+  uoutpost move show on_usage: '%tag% <red>Use <#55ffff>/uoutpost move <red><name>'
+  uoutpost delete show on_help: <click:suggest_command:"/uoutpost delete "><hover:show_text:'<green>Click to delete a Outpost.'> <#55ffff>/uoutpost delete <red><name> <gray>-<yellow> Delete a Outpost.</hover></click>
+  uoutpost delete show on_success: '%tag% <green>Outpost deleted successfully.'
+  uoutpost delete show on_error: '%tag% <red>Error deleting Outpost.'
+  uoutpost delete show on_usage: '%tag% <red>Use <#55ffff>/uoutpost delete <red><name>'
+  uoutpost list show on_help: <click:suggest_command:"/uoutpost list"><hover:show_text:'<green>Click to list Outposts.'> <#55ffff>/uoutpost list <light_purple>(-gui)<gray>-<yellow> List the Outposts.</hover></click>
+  uoutpost list show on_success: '%tag% <green>Successfully.'
+  uoutpost list show on_error: '%tag% <red>Error listing outposts.'
+  uoutpost list show on_usage: '%tag% <red>Use <#55ffff>/uoutpost list'
+  uoutpost view show on_help: <click:suggest_command:"/uoutpost view "><hover:show_text:'<green>Click to view a outpost.'> <#55ffff>/uoutpost view <red><name> <light_purple>(-gui) <gray>-<yellow> View a Outpost.</hover></click>
+  uoutpost view show on_success: '%tag% <green>Successfully.'
+  uoutpost view show on_error: '%tag% <red>Error viewing outpost.'
+  uoutpost view show on_usage: '%tag% <red>Use <#55ffff>/uoutpost view <red><name> <light_purple>(-gui)'
+  uoutpost commands show on_help: <click:run_command:"/uoutpost commands"><hover:show_text:'<green>Click to view all commands.'> <#55ffff>/uoutpost commands <gray>-<yellow> View all command.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  uoutpost commands show on_success: '%tag% <green>The command was successfully removed.'
+  uoutpost commands show on_error: '%tag% <red>There was an error removing command.'
+  uoutpost commands show on_usage: '%tag% <red>Use <#55ffff>/uoutpost commands remove <red><name> <id>'
+  uoutpost commands subcommands list: <click:suggest_command:"/uoutpost commands list "><hover:show_text:'<green>Click to view all commands.'> <#55ffff>/uoutpost commands list <red><name> <light_purple>(-gui) <gray>-<yellow> List all commands.</hover></click>
+  uoutpost commands subcommands list show on_success: '%tag% <green>Successfully.'
+  uoutpost commands subcommands list show on_error: '%tag% <red>An error occurred while list commands.'
+  uoutpost commands subcommands list show on_usage: '%tag% <red>Use <#55ffff>/uoutpost commands list <red><name>'
+  uoutpost commands subcommands add: <click:suggest_command:"/uoutpost commands add "><hover:show_text:'<green>Click to add command a outpost.'> <#55ffff>/uoutpost commands add <red><name> (cmd) <gray>-<yellow> Add a command.</hover></click>
+  uoutpost commands subcommands add show on_success: '%tag% <green>The command was successfully added.'
+  uoutpost commands subcommands add show on_error: '%tag% <red>There was an error adding the command.'
+  uoutpost commands subcommands add show on_usage: '%tag% <red>Use <#55ffff>/uoutpost commands add <red><name> <cmd>'
+  uoutpost commands subcommands remove: <click:suggest_command:"/uoutpost commands remove "><hover:show_text:'<green>Click to remove command a outpost.'> <#55ffff>/uoutpost commands remove <red><name> <id> <gray>-<yellow> Remove a command.</hover></click>
+  uoutpost loots show on_help: <click:run_command:"/uoutpost loots"><hover:show_text:'<green>Click to view and edit.'> <#55ffff>/uoutpost loots <gray>-<yellow> View and Edit loots.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  uoutpost loots show on_success: '%tag% <green>The loot was successfully changed.'
+  uoutpost loots show on_error: '%tag% <red>There was an error changing loot.'
+  uoutpost loots show on_usage: '%tag% <red>Use <#55ffff>/uoutpost loots'
+  uoutpost loots subcommands list: <click:suggest_command:"/uoutpost loots list "><hover:show_text:'<green>Click to view all loots.'> <#55ffff>/uoutpost loots list <red><name> <light_purple>(-gui) <gray>-<yellow> List all loots.</hover></click>
+  uoutpost loots subcommands list show on_success: '%tag% <green>Successfully.'
+  uoutpost loots subcommands list show on_error: '%tag% <red>An error occurred while list commands.'
+  uoutpost loots subcommands list show on_usage: '%tag% <red>Use <#55ffff>/uoutpost loots list <red><name>'
+  uoutpost loots subcommands add: <click:suggest_command:"/uoutpost loots add "><hover:show_text:'<green>Click to add an loot.'> <#55ffff>/uoutpost loots add <red><name> <gray>-<yellow> Add loot to outpost.</hover></click>
+  uoutpost loots subcommands add show on_success: '%tag% <green>The command was successfully added.'
+  uoutpost loots subcommands add show on_error: '%tag% <red>There was an error adding the command.'
+  uoutpost loots subcommands add show on_usage: '%tag% <red>Use <#55ffff>/uoutpost loots add <red><name> <cmd>'
+  uoutpost loots subcommands type: <click:suggest_command:"/uoutpost loots type "><hover:show_text:'<green>Click to type of loot.'> <#55ffff>/uoutpost loots type <red><name> <type> (amount) <gray>-<yellow> Change loot type.</hover></click>
+  uoutpost loots subcommands type show on_success: '%tag% <green>The loot type have been changed.'
+  uoutpost loots subcommands type show on_error: '%tag% <red>An error occurred while changing.'
+  uoutpost loots subcommands type show on_usage: '%tag% <red>Use <#55ffff>/uoutpost loots type <red><name> <type> (amount)'
+  uoutpost loots subcommands chance: <click:suggest_command:"/uoutpost loots chance "><hover:show_text:'<green>Click to chance of loot.'> <#55ffff>/uoutpost loots chance <red><name> <num>% <gray>-<yellow> Change loot chance.</hover></click>
+  uoutpost loots subcommands chance show on_success: '%tag% <green>The loot chance has been changed successfully.'
+  uoutpost loots subcommands chance show on_error: '%tag% <red>An error occurred when changing the chance of loots'
+  uoutpost loots subcommands chance show on_usage: '%tag% <red>Use <#55ffff>/uoutpost loots chance <red><name> <num>%'
+  uoutpost keys show on_help: <click:run_command:"/uoutpost keys "><hover:show_text:'<green>Click to view and edit.'> <#55ffff>/uoutpost keys <gray>-<yellow> View and Edit keys.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  uoutpost keys show on_success: '%tag% <green>The loot was successfully changed.'
+  uoutpost keys show on_error: '%tag% <red>There was an error changing keys.'
+  uoutpost keys show on_usage: '%tag% <red>Use <#55ffff>/uoutpost keys'
+  uoutpost keys subcommands listblocks: <click:suggest_command:"/uoutpost keys listblocks "><hover:show_text:'<green>Click to view all keys.'> <#55ffff>/uoutpost keys listblocks <light_purple>(-gui) <gray>-<yellow> List all keys.</hover></click>
+  uoutpost keys subcommands listblocks show on_success: '%tag% <green>Successfully.'
+  uoutpost keys subcommands listblocks show on_error: '%tag% <red>An error occurred while listblocks of keys.'
+  uoutpost keys subcommands listblocks show on_usage: '%tag% <red>Use <#55ffff>/uoutpost keys listblocks'
+  uoutpost keys subcommands blocktp: <click:suggest_command:"/uoutpost keys blocktp "><hover:show_text:'<green>Click to view all keys.'> <#55ffff>/uoutpost keys blocktp <red><id> <gray>-<yellow> Teleport to block.</hover></click>
+  uoutpost keys subcommands blocktp show on_success: '%tag% <green>You were successfully teleported.'
+  uoutpost keys subcommands blocktp show on_error: '%tag% <red>An error occurred while teleport to location.'
+  uoutpost keys subcommands blocktp show on_usage: '%tag% <red>Use <#55ffff>/uoutpost keys blocktp <red><id>'
+  uoutpost keys subcommands toggle: <click:suggest_command:"/uoutpost keys toggle "><hover:show_text:'<green>Click to toggle key.'> <#55ffff>/uoutpost keys toggle <gray>-<yellow> Toggle the keys.</hover></click>
+  uoutpost keys subcommands toggle show on_success: '%tag% <green>The key was successfully toggled.'
+  uoutpost keys subcommands toggle show on_error: '%tag% <red>There was an error toggle the key.'
+  uoutpost keys subcommands toggle show on_usage: '%tag% <red>Use <#55ffff>/uoutpost keys toggle'
+  uoutpost keys subcommands wand: <click:suggest_command:"/uoutpost keys wand "><hover:show_text:'<green>Click to get wand.'> <#55ffff>/uoutpost keys wand <gray>-<yellow> Get key wand.</hover></click>
+  uoutpost keys subcommands wand show on_success: '%tag% <green>You have successfully received the Wand Key.'
+  uoutpost keys subcommands wand show on_error: '%tag% <red>Error receiving the Key Wand.'
+  uoutpost keys subcommands wand show on_usage: '%tag% <red>Use <#55ffff>/uoutpost keys wand'
+  uoutpost keys subcommands give: <click:suggest_command:"/uoutpost keys give "><hover:show_text:'<green>Click to give key.'> <#55ffff>/uoutpost keys give <red><name> <player> (amount) <gray>-<yellow> Give key to player.</hover></click>
+  uoutpost keys subcommands give show on_success: '%tag% <green>You have successfully givem the Key item.'
+  uoutpost keys subcommands give show on_error: '%tag% <red>Error receiving the Key item.'
+  uoutpost keys subcommands give show on_usage: '%tag% <red>Use <#55ffff>/uoutpost keys give <red><name> <player> (amount)'
+  uoutpost proximity show on_help: <click:run_command:"/uoutpost proximity "><hover:show_text:'<green>Click to view and edit.'> <#55ffff>/uoutpost proximity <gray>-<yellow> View and Edit proximity.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  uoutpost proximity show on_success: '%tag% <green>The proximity was successfully changed.'
+  uoutpost proximity show on_error: '%tag% <red>There was an error changing proximity.'
+  uoutpost proximity show on_usage: '%tag% <red>Use <#55ffff>/uoutpost proximity'
+  uoutpost proximity subcommands setsize: <click:suggest_command:"/uoutpost proximity setsize "><hover:show_text:'<green>Click to change.'> <#55ffff>/uoutpost proximity setsize <red><name> <amount> <gray>-<yellow> Set proximity size.</hover></click>
+  uoutpost proximity subcommands setsize show on_success: '%tag% <green>Proximity size has been successfully changed.'
+  uoutpost proximity subcommands setsize show on_error: '%tag% <red>There was an error changing the proximity size.'
+  uoutpost proximity subcommands setsize show on_usage: '%tag% <red>Use <#55ffff>/uoutpost proximity setsize <red><name> <amount>'
+  uoutpost proximity subcommands toggle: <click:suggest_command:"/uoutpost proximity toggle "><hover:show_text:'<green>Click to toggle proximity.'> <#55ffff>/uoutpost proximity toggle <red><name> <gray>-<yellow> Toggle the proximity type.</hover></click>
+  uoutpost proximity subcommands toggle show on_success: '%tag% <green>The proximity was successfully toggled to {value}<green>.'
+  uoutpost proximity subcommands toggle show on_error: '%tag% <red>There was an error toggle the proximity.'
+  uoutpost proximity subcommands toggle show on_usage: '%tag% <red>Use <#55ffff>/uoutpost proximity toggle <red><name>'
+  uoutpost seticon show on_help: <click:suggest_command:"/uoutpost seticon "><hover:show_text:'<green>Click to change the outpost icon.'> <#55ffff>/uoutpost seticon <red><name> <gray>-<yellow> Change the icon.</hover></click>
+  uoutpost seticon show on_success: '%tag% <green>The outpost icon has been successfully changed.'
+  uoutpost seticon show on_error: '%tag% <red>There was an error changing the outpost icon.'
+  uoutpost seticon show on_usage: '%tag% <red>Use <#55ffff>/uoutpost seticon <red><name>'
+  uoutpost setcapture show on_help: <click:suggest_command:"/uoutpost setcapture "><hover:show_text:'<green>Click to change the outpost capture time.'> <#55ffff>/uoutpost setcapture <red><name> <sec> <gray>-<yellow> Change the capture time.</hover></click>
+  uoutpost setcapture show on_success: '%tag% <green>The outpost capture time has been successfully changed.'
+  uoutpost setcapture show on_error: '%tag% <red>There was an error changing the outpost capture time.'
+  uoutpost setcapture show on_usage: '%tag% <red>Use <#55ffff>/uoutpost setcapture <red><name> <secs>'
+  uoutpost hologram show on_help: <click:run_command:"/uoutpost hologram "><hover:show_text:'<green>Click to view and edit.'> <#55ffff>/uoutpost hologram <gray>-<yellow> View and Edit hologram.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  uoutpost hologram show on_success: '%tag% <green>The hologram was successfully changed.'
+  uoutpost hologram show on_error: '%tag% <red>There was an error changing hologram.'
+  uoutpost hologram show on_usage: '%tag% <red>Use <#55ffff>/uoutpost hologram'
+  uoutpost hologram subcommands create: <click:suggest_command:"/uoutpost hologram create "><hover:show_text:'<green>Click to change.'> <#55ffff>/uoutpost hologram create <red><name> <type> <time> (maxlines) <gray>-<yellow> Create a hologram.</hover></click>
+  uoutpost hologram subcommands create show on_success: '%tag% <green>The new hologram was successfully created.'
+  uoutpost hologram subcommands create show on_error: '%tag% <red>There was an error creating the hologram.'
+  uoutpost hologram subcommands create show on_usage: '%tag% <red>Use <#55ffff>/uoutpost hologram create <red><name> <type> <time> (maxlines)'
+  uoutpost hologram subcommands delete: <click:suggest_command:"/uoutpost hologram delete "><hover:show_text:'<green>Click to delete hologram.'> <#55ffff>/uoutpost hologram delete <red><name> <gray>-<yellow> Delete an hologram.</hover></click>
+  uoutpost hologram subcommands delete show on_success: '%tag% <green>The hologram was successfully deleted.'
+  uoutpost hologram subcommands delete show on_error: '%tag% <red>There was an error delete the hologram.'
+  uoutpost hologram subcommands delete show on_usage: '%tag% <red>Use <#55ffff>/uoutpost hologram delete <red><name>'
+  uoutpost hologram subcommands list: <click:suggest_command:"/uoutpost hologram list "><hover:show_text:'<green>Click to list all holograms.'> <#55ffff>/uoutpost hologram list <light_purple>(-gui) <gray>-<yellow> List all holograms.</hover></click>
+  uoutpost hologram subcommands list show on_success: '%tag% <green>Success.'
+  uoutpost hologram subcommands list show on_error: '%tag% <red>There was an error on show the list.'
+  uoutpost hologram subcommands list show on_usage: '%tag% <red>Use <#55ffff>/uoutpost hologram list <light_purple>(-gui)'
+  uoutpost hologram subcommands tp: <click:suggest_command:"/uoutpost hologram tp "><hover:show_text:'<green>Click to teleport to holo.'> <#55ffff>/uoutpost hologram tp <red><name> <gray>-<yellow> Teleport to the hologram.</hover></click>
+  uoutpost hologram subcommands tp show on_success: '%tag% <green>You were successfully teleported.'
+  uoutpost hologram subcommands tp show on_error: '%tag% <red>There was an error teleporting to the hologram.'
+  uoutpost hologram subcommands tp show on_usage: '%tag% <red>Use <#55ffff>/uoutpost hologram tp <red><name>'
+  uoutpost hologram subcommands movehere: <click:suggest_command:"/uoutpost hologram movehere "><hover:show_text:'<green>Click to move the hologram here.'> <#55ffff>/uoutpost hologram movehere <red><name> <gray>-<yellow> Move the location holo.</hover></click>
+  uoutpost hologram subcommands movehere show on_success: '%tag% <green>The hologram has been successfully moved to the new location.'
+  uoutpost hologram subcommands movehere show on_error: '%tag% <red>An error occurred while moving the hologram.'
+  uoutpost hologram subcommands movehere show on_usage: '%tag% <red>Use <#55ffff>/uoutpost hologram movehere <red><name>'
+  uoutpost stats show on_help: <click:run_command:"/uoutpost stats "><hover:show_text:'<green>Click to view and edit.'> <#55ffff>/uoutpost stats <gray>-<yellow> View and Edit stats.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  uoutpost stats show on_success: '%tag% <green>The stats was successfully changed.'
+  uoutpost stats show on_error: '%tag% <red>There was an error changing stats.'
+  uoutpost stats show on_usage: '%tag% <red>Use <#55ffff>/uoutpost stats'
+  uoutpost stats subcommands clearall: <click:suggest_command:"/uoutpost stats clearall "><hover:show_text:'<green>Click to change.'> <#55ffff>/uoutpost stats clearall <red><type> <gray>-<yellow> Clear all stats.</hover></click>
+  uoutpost stats subcommands clearall show on_success: '%tag% <green>Status cleared successfully.'
+  uoutpost stats subcommands clearall show on_error: '%tag% <red>There was an error clear the stats.'
+  uoutpost stats subcommands clearall show on_usage: '%tag% <red>Use <#55ffff>/uoutpost stats clearall <red><type>'
+  uoutpost stats subcommands remove: <click:suggest_command:"/uoutpost stats remove "><hover:show_text:'<green>Click to remove stats.'> <#55ffff>/uoutpost stats remove <red><type> <value> <gray>-<yellow> Delete a player or group stats.</hover></click>
+  uoutpost stats subcommands remove show on_success: '%tag% <green>The stats was successfully removed.'
+  uoutpost stats subcommands remove show on_error: '%tag% <red>There was an error remove the stats.'
+  uoutpost stats subcommands remove show on_usage: '%tag% <red>Use <#55ffff>/uoutpost stats remove <red><type> <value>'
+  uoutpost stats subcommands add: <click:suggest_command:"/uoutpost stats add "><hover:show_text:'<green>Click to add stats.'> <#55ffff>/uoutpost stats add <red><player> <time> <gray>-<yellow> Add an stats (ago).</hover></click>
+  uoutpost stats subcommands add show on_success: '%tag% <green>Status has been added to player.'
+  uoutpost stats subcommands add show on_error: '%tag% <red>There was an error adding status to player.'
+  uoutpost stats subcommands add show on_usage: '%tag% <red>Use <#55ffff>/uoutpost stats add <red><player> <time>'
+  uoutpost stats subcommands list: <click:suggest_command:"/uoutpost stats list "><hover:show_text:'<green>Click to list stats.'> <#55ffff>/uoutpost stats list <red><type> <light_purple>(-gui) <gray>-<yellow> List all status.</hover></click>
+  uoutpost stats subcommands list show on_success: '%tag% <green>Status has been listed.'
+  uoutpost stats subcommands list show on_error: '%tag% <red>There was an error listing status.'
+  uoutpost stats subcommands list show on_usage: '%tag% <red>Use <#55ffff>/uoutpost stats list <red><type> <light_purple>(-gui)'
+  uoutpost extension show on_help: <click:run_command:"/uoutpost extension "><hover:show_text:'<green>Click to view and edit.'> <#55ffff>/uoutpost extension <gray>-<yellow> View and Edit extensions.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  uoutpost extension show on_success: '%tag% <green>The extension was successfully changed.'
+  uoutpost extension show on_error: '%tag% <red>There was an error changing extension.'
+  uoutpost extension show on_usage: '%tag% <red>Use <#55ffff>/uoutpost extension'
+  uoutpost extension subcommands download: <click:suggest_command:"/uoutpost extension download "><hover:show_text:'<green>Click to change.'> <#55ffff>/uoutpost extension download <red><name> <gray>-<yellow> Download an extension.</hover></click>
+  uoutpost extension subcommands download show on_success: '%tag% <green>Download process started, wait....'
+  uoutpost extension subcommands download show on_error: '%tag% <red>There was an error downloading the extension.'
+  uoutpost extension subcommands download show on_usage: '%tag% <red>Use <#55ffff>/uoutpost extension download <red><name>'
+  uoutpost extension subcommands update: <click:suggest_command:"/uoutpost extension update "><hover:show_text:'<green>Click to update extension.'> <#55ffff>/uoutpost extension update <red><name> <gray>-<yellow> Update an extension.</hover></click>
+  uoutpost extension subcommands update show on_success: '%tag% <green>Update process started, wait...'
+  uoutpost extension subcommands update show on_error: '%tag% <red>There was an error update the extension.'
+  uoutpost extension subcommands update show on_usage: '%tag% <red>Use <#55ffff>/uoutpost extension update <red><name>'
+  uoutpost extension subcommands list: <click:suggest_command:"/uoutpost extension list "><hover:show_text:'<green>Click to list installed extensions.'> <#55ffff>/uoutpost extension list <light_purple>(-gui) <gray>-<yellow> List installed extensions.</hover></click>
+  uoutpost extension subcommands list show on_success: '%tag% <green>Extension has been listed.'
+  uoutpost extension subcommands list show on_error: '%tag% <red>There was an error listing extensions.'
+  uoutpost extension subcommands list show on_usage: '%tag% <red>Use <#55ffff>/uoutpost extension list <light_purple>(-gui)'
+  uoutpost extension subcommands all: <click:suggest_command:"/uoutpost extension all "><hover:show_text:'<green>Click to view all extension.'> <#55ffff>/uoutpost extension all <light_purple>(-gui) <gray>-<yellow> List available extensions.</hover></click>
+  uoutpost extension subcommands all show on_success: '%tag% <green>Extensions successfully listed.'
+  uoutpost extension subcommands all show on_error: '%tag% <red>There was an error listing the extensions.'
+  uoutpost extension subcommands all show on_usage: '%tag% <red>Use <#55ffff>/uoutpost extension all <light_purple>(-gui)'
+  uoutpost extension subcommands reload: <click:suggest_command:"/uoutpost extension reload "><hover:show_text:'<green>Click to reload extensions.'> <#55ffff>/uoutpost extension reload <gray>-<yellow> Reload extensions.</hover></click>
+  uoutpost extension subcommands reload show on_success: '%tag% <green>Extensions have been reloaded successfully <gray>(%time%).'
+  uoutpost extension subcommands reload show on_error: '%tag% <red>There was an error reloading extensions.'
+  uoutpost extension subcommands reload show on_usage: '%tag% <red>Use <#55ffff>/uoutpost extension reload'
+  uoutpost extension subcommands view: <click:suggest_command:"/uoutpost extension view "><hover:show_text:'<green>Click to view extensions.'> <#55ffff>/uoutpost extension view <red><name> <gray>-<yellow> View extension.</hover></click>
+  uoutpost extension subcommands view show on_success: '%tag% <green>Success.'
+  uoutpost extension subcommands view show on_error: '%tag% <red>There was an error viewing extensions.'
+  uoutpost extension subcommands view show on_usage: '%tag% <red>Use <#55ffff>/uoutpost extension view <red><name>'
+  uoutpost adminmode show on_help: <click:run_command:"/uoutpost adminmode "><hover:show_text:'<green>Click to enter admin mode.'> <#55ffff>/uoutpost adminmode <gray>-<yellow> Enter admin mode.</hover></click>
+  uoutpost adminmode show on_success: '%tag% <green>You changed the admin mode to: {status}'
+  uoutpost adminmode show on_error: '%tag% <red>There was an error entering administrator mode.'
+  uoutpost adminmode show on_usage: '%tag% <red>Use <#55ffff>/uoutpost adminmode'
+  uoutpost advantages show on_help: <click:run_command:"/uoutpost advantages "><hover:show_text:'<green>Click to view and edit.'> <#55ffff>/uoutpost advantages <gray>-<yellow> View and Edit advantagess.</hover></click> <hover:show_text:'<green>With sub commands.'><green>[!]</hover>
+  uoutpost advantages show on_success: '%tag% <green>The advantages was successfully changed.'
+  uoutpost advantages show on_error: '%tag% <red>There was an error changing advantages.'
+  uoutpost advantages show on_usage: '%tag% <red>Use <#55ffff>/uoutpost advantages'
+  uoutpost advantages subcommands list: <click:suggest_command:"/uoutpost advantages list "><hover:show_text:'<green>Click to list all advantages.'> <#55ffff>/uoutpost advantages list <red><name> <light_purple>(-gui) <gray>-<yellow> List all advantagess.</hover></click>
+  uoutpost advantages subcommands list show on_success: '%tag% <green>Advantages has been listed.'
+  uoutpost advantages subcommands list show on_error: '%tag% <red>There was an error listing advantages.'
+  uoutpost advantages subcommands list show on_usage: '%tag% <red>Use <#55ffff>/uoutpost advantages list <red><name> <light_purple>(-gui)'
+  uoutpost advantages subcommands view: <click:suggest_command:"/uoutpost advantages view "><hover:show_text:'<green>Click to view advantagess.'> <#55ffff>/uoutpost advantages view <red><name> <id> <light_purple>(-gui) <gray>-<yellow> View advantage.</hover></click>
+  uoutpost advantages subcommands view show on_success: '%tag% <green>Success.'
+  uoutpost advantages subcommands view show on_error: '%tag% <red>There was an error viewing advantages.'
+  uoutpost advantages subcommands view show on_usage: '%tag% <red>Use <#55ffff>/uoutpost advantages view <red><name> <id> <light_purple>(-gui)'
+  uoutpost advantages subcommands toggle: <click:suggest_command:"/uoutpost advantages toggle "><hover:show_text:'<green>Click to change.'> <#55ffff>/uoutpost advantages toggle <red><name> <id> <gray>-<yellow> Toggle an advantages.</hover></click>
+  uoutpost advantages subcommands toggle show on_success: '%tag% <green>Advantage successfully toggled'
+  uoutpost advantages subcommands toggle show on_error: '%tag% <red>There was an error toggleing the advantages.'
+  uoutpost advantages subcommands toggle show on_usage: '%tag% <red>Use <#55ffff>/uoutpost advantages toggle <red><name> <id>'
+  uoutpost advantages subcommands setmultiplier: <click:suggest_command:"/uoutpost advantages setmultiplier "><hover:show_text:'<green>Click to setmultiplier advantages.'> <#55ffff>/uoutpost advantages setmultiplier <red><name> <id> <amount/<light_purple>-gui<red>>  <gray>-<yellow> Set the multiplier.</hover></click>
+  uoutpost advantages subcommands setmultiplier show on_success: '%tag% <green>Multiplier changed successfully'
+  uoutpost advantages subcommands setmultiplier show on_error: '%tag% <red>An error occurred while changing the multiplier.'
+  uoutpost advantages subcommands setmultiplier show on_usage: '%tag% <red>Use <#55ffff>/uoutpost advantages setmultiplier <red><name> <id> <amount/<light_purple>-gui<red>>'
+  uoutpost advantages subcommands whitelist: <click:suggest_command:"/uoutpost advantages whitelist "><hover:show_text:'<green>Click to view whitelist advantages.'> <#55ffff>/uoutpost advantages whitelist <red><name> <id> <set|unset> <value/<light_purple>-gui<red>>  <gray>-<yellow> List available advantages.</hover></click>
+  uoutpost advantages subcommands whitelist show on_success: '%tag% <green>Whitelist successfully changed.'
+  uoutpost advantages subcommands whitelist show on_error: '%tag% <red>There was an error changing the whitelist.'
+  uoutpost advantages subcommands whitelist show on_usage: '%tag% <red>Use <#55ffff>/uoutpost advantages whitelist <red><name> <id> <set|unset> <value/<light_purple>-gui<red>>'
+  uoutpost advantages subcommands sync: <click:suggest_command:"/uoutpost advantages sync "><hover:show_text:'<green>Click to sync advantages.'> <#55ffff>/uoutpost advantages sync <gray>-<yellow> Sync all advantages.</hover></click>
+  uoutpost advantages subcommands sync show on_success: '%tag% <green>Advantages have been synced successfully <gray>(%time%).'
+  uoutpost advantages subcommands sync show on_error: '%tag% <red>There was an error syncing advantages.'
+  uoutpost advantages subcommands sync show on_usage: '%tag% <red>Use <#55ffff>/uoutpost advantages sync'
+ 
+ 
+ # TRANSLATIONS OF THE CHAT ACTIONS
+ 
+CHAT:
+  commandunknownplayer:
+    message:
+    - '%tag% <color:#00AAAA>Unknown command, <aqua><click:run_command:"/outpost help"><hover:show_text:"<green>Click here to view Help."><green><bold>[CLICK HERE]</bold></green></hover></click> <color:#00AAAA>or use <#55ffff>/outpost help <color:#00AAAA>to see the list of available commands.'
+    actionbar: <#55ffff>/outpost help <color:#00AAAA>to see available commands.
+    title:
+      line: <color:#00AAAA>! <#55ffff>/outpost help
+      subline: <yellow>To see commands!
+    bossbar: <#55ffff>/outpost help <color:#00AAAA>to see available commands. <color:#00AAAA>({time})
+  commandunknownadmin:
+    message:
+    - '%tag% <color:#00AAAA>Unknown command, <aqua><click:run_command:"/uoutpost help"><hover:show_text:"<green>Click here to view Help."><green><bold>[CLICK HERE]</bold></green></hover></click> <color:#00AAAA>or use <#55ffff>/uoutpost help <color:#00AAAA>to see the list of available commands.'
+    actionbar: <#55ffff>/uoutpost help <color:#00AAAA>to see available commands.
+    title:
+      line: <color:#00AAAA>! <#55ffff>/uoutpost help
+      subline: <yellow>To see commands!
+    bossbar: <#55ffff>/uoutpost help <color:#00AAAA>to see available commands. <color:#00AAAA>({time})
+  addoutpostcommand:
+    message:
+    - ' '
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - <color:#00AAAA><bold>!</bold> <yellow>Write in the chat the <aqua>New Command<yellow>.
+    - ' <gray>- Type <color:#00AAAA>cancel</color:#00AAAA> <gray>or <click:run_command:"/outpost cancel"><hover:show_text:"<color:#00AAAA>Click to cancel."><color:#00AAAA>[CLICK HERE]</color:#00AAAA></hover></click> to cancel.'
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - ' '
+    actionbar: <yellow>Write in the chat the new command.
+    title:
+      line: <color:#00AAAA>! <yellow>New Command
+      subline: <yellow>Write in the chat
+    bossbar: <yellow>Write in the chat the new command. <color:#00AAAA>({time})
+  sendoutpostinsideenter:
+    message:
+    - ' '
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - <color:#00AAAA><bold>!</bold> <#00AAAA>You entered the area <aqua>%uoutpost_name%<yellow>.
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - ' '
+    actionbar: <color:#00AAAA><bold>!</bold> <#00AAAA>You entered the area <aqua>%uoutpost_name%
+    title:
+      line: <color:#00AAAA>! <#00AAAA>Outpost Area
+      subline: <aqua>%uoutpost_name%
+    bossbar: <color:#00AAAA><bold>!</bold> <#00AAAA>You entered the area <aqua>%uoutpost_name%
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <gold><bold>U</bold><color:#00AAAA><bold>Outpost</bold>
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Running:'
+    - ' <aqua>%uoutpost_name%'
+    - ''
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Controlling:'
+    - ' <white>Player: <aqua>%uoutpost_control_player%'
+    - ' <white>Faction: <aqua>%uoutpost_control_group%'
+  sendoutpostoutsideenter:
+    message:
+    - ' '
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - <color:#00AAAA><bold>!</bold> <#00AAAA>You entered the area <aqua>%uoutpost_name%<yellow>.
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - ' '
+    actionbar: <color:#00AAAA><bold>!</bold> <#00AAAA>You entered the area <aqua>%uoutpost_name%
+    title:
+      line: <color:#00AAAA>! <#00AAAA>Outpost Area
+      subline: <aqua>%uoutpost_name%
+    bossbar: <color:#00AAAA><bold>!</bold> <#00AAAA>You entered the area <aqua>%uoutpost_name%
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <gold><bold>U</bold><color:#00AAAA><bold>Outpost</bold>
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Running:'
+    - ' <aqua>%uoutpost_name%'
+    - ''
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Coordinates:'
+    - ' <white>X: <aqua>%uoutpost_coord_x%, <white>Y: <aqua>%uoutpost_coord_y%, <white>Z: <aqua>%uoutpost_coord_z%'
+    - ' <white>Direction: <aqua>%uoutpost_direction_relative%'
+    - ''
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Controlling:'
+    - ' <white>Player: <aqua>%uoutpost_control_player%'
+    - ' <white>Faction: <aqua>%uoutpost_control_group%'
+  sendoutpostcapture:
+    message:
+    - ' '
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - <color:#00AAAA><bold>!</bold> <#00AAAA>Outpost has captured by <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)<yellow>.
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - ' '
+    actionbar: '<color:#00AAAA><bold>!</bold> <#00AAAA>Captured by: <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)'
+    title:
+      line: ''
+      subline: <aqua>Captured
+    bossbar: '<color:#00AAAA><bold>!</bold> <#00AAAA>Captured by: <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)'
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <gold><bold>U</bold><color:#00AAAA><bold>Outpost</bold>
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - ' <gold><bold>CAPTURED!'
+    - ' '
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Running:'
+    - ' <aqua>%uoutpost_name%'
+    - ''
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Elapsed Time:'
+    - ' <gray>%uoutpost_elapsedtime%'
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Controlling:'
+    - ' <white>Player: <aqua>%uoutpost_control_player%'
+    - ' <white>Faction: <aqua>%uoutpost_control_group%'
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Advantages:'
+    - ' <white>Captures: <aqua>%uoutpost_player_captures%'
+    - ' <white>Advantages: <aqua>%uoutpost_advantages_amount%'
+    - ' <white>Involved: <aqua>%uoutpost_player_involved_amount%'
+  sendothercapture:
+    message:
+    - ' '
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - <color:#00AAAA><bold>!</bold> <#00AAAA>Outpost has captured by <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)<yellow>.
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - ' '
+    actionbar: '<color:#00AAAA><bold>!</bold> <#00AAAA>Captured by: <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)'
+    title:
+      line: ''
+      subline: <aqua>Captured
+    bossbar: '<color:#00AAAA><bold>!</bold> <#00AAAA>Captured by: <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)'
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <gold><bold>U</bold><color:#00AAAA><bold>Outpost</bold>
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - ' <red><bold>CAPTURED !'
+    - ' '
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Running:'
+    - ' <aqua>%uoutpost_name%'
+    - ''
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Elapsed Time:'
+    - ' <gray>%uoutpost_elapsedtime%'
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Controlling:'
+    - ' <white>Player: <aqua>%uoutpost_control_player%'
+    - ' <white>Faction: <aqua>%uoutpost_control_group%'
+  sendprecapture:
+    message: [
+      ]
+    actionbar: '<color:#00AAAA><bold>!</bold> <#00AAAA>TimeLeft: <aqua>%uoutpost_pretimeleft%<gray>| <#00AAAA>Capturing from: <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)'
+    title:
+      line: ''
+      subline: <aqua>%uoutpost_pretimeleft%
+    bossbar: '<color:#00AAAA><bold>!</bold> <#00AAAA>TimeLeft: <aqua>%uoutpost_pretimeleft%<gray>| <#00AAAA>Capturing from: <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)'
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <gold><bold>U</bold><color:#00AAAA><bold>Outpost</bold> <yellow><bold>PRE CAPTURE...
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Running:'
+    - ' <aqua>%uoutpost_name%'
+    - ''
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Capture Time:'
+    - ' <aqua>%uoutpost_prebarleft_{amount}_length:10_remaining:<gray>|_progress:<color:#00AAAA>|_complete:<color:#00AAAA>|_fullbar:<color:#00AAAA>Ending% <gray>%uoutpost_pretimeleft%'
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Current controller:'
+    - ' <white>Current Player: <aqua>%uoutpost_control_player%'
+    - ' <white>Current Faction: <aqua>%uoutpost_control_group%'
+  sendlosingcapture:
+    message: [
+      ]
+    actionbar: '<color:#00AAAA><bold>!</bold> <#00AAAA>TimeLeft: <aqua>%uoutpost_pretimeleft%<gray>| <#00AAAA>Losing: <aqua>%uoutpost_precontrol_player% <gray>(%uoutpost_precontrol_group%)'
+    title:
+      line: ''
+      subline: <aqua>%uoutpost_pretimeleft%
+    bossbar: '<color:#00AAAA><bold>!</bold> <red>TimeLeft: <aqua>%uoutpost_pretimeleft%<gray>| <red>Capturing: <aqua>%uoutpost_precontrol_player% <gray>(%uoutpost_precontrol_group%)'
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <gold><bold>U</bold><color:#00AAAA><bold>Outpost</bold> <dark_red><bold>LOSING CAPTURE!
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Running:'
+    - ' <aqua>%uoutpost_name%'
+    - ''
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Capture Time:'
+    - ' <aqua>%uoutpost_barleft_{amount}_length:10_remaining:<gray>|_progress:<color:red>|_complete:<color:red>|_fullbar:<color:red>Ending% <gray>%uoutpost_pretimeleft%'
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Trying to capture:'
+    - ' <white>Player: <aqua>%uoutpost_precontrol_player%'
+    - ' <white>Faction: <aqua>%uoutpost_precontrol_group%'
+  sendoutpostcaptureall:
+    message:
+    - ' '
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - <color:#00AAAA><bold>!</bold> <#00AAAA>Outpost has captured by <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)<yellow>.
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - ' '
+    actionbar: '<color:#00AAAA><bold>!</bold> <#00AAAA>Elapsed Time: <aqua>%uoutpost_elapsedtime%<gray>| <#00AAAA>Captured by: <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)'
+    title:
+      line: ''
+      subline: <aqua>%uoutpost_elapsedtime%
+    bossbar: '<color:#00AAAA><bold>!</bold> <#00AAAA>TimeLeft: <aqua>%uoutpost_elapsedtime%<gray>| <#00AAAA>Captured by: <aqua>%uoutpost_control_player% <gray>(%uoutpost_control_group%)'
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <gold><bold>U</bold><color:#00AAAA><bold>Outpost</bold> <green><bold>CAPTURED!
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines: [
+      ]
+  addoutpoststats:
+    message:
+    - ' '
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - <color:#00AAAA><bold>!</bold> <yellow>Write in the chat the <aqua><bold>PLAYER NAME</bold><yellow> that the status will be added to.
+    - ' <gray>- Type <color:#00AAAA>cancel</color:#00AAAA> <gray>or <click:run_command:"/outpost cancel"><hover:show_text:"<color:#00AAAA>Click to cancel."><color:#00AAAA>[CLICK HERE]</color:#00AAAA></hover></click> to cancel.'
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - ' '
+    actionbar: <yellow>Write in the chat the Player name.
+    title:
+      line: <color:#00AAAA>! <yellow>New Stats
+      subline: <yellow>Write in the chat
+    bossbar: <yellow>Write in the chat the Player name. <color:#00AAAA>({time})
+  sendoutpostcreate:
+    message:
+    - ' '
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - ' '
+    - '<color:#00AAAA><bold>!</bold> <yellow>Follow the steps to create a new Outpost:'
+    - ' <gray><bold>-</bold> <yellow>Get the wand with <#55ffff>/uoutpost wand<yellow>.'
+    - ' <gray><bold>-</bold> <yellow>Select the two high and low points (left and right click) with the wand<yellow>.'
+    - ' <gray><bold>-</bold> <yellow>Write in the chat the new <aqua><bold>Outpost Name</bold><yellow>.'
+    - ' <gray>- Type <color:#00AAAA>cancel</color:#00AAAA> <gray>or <click:run_command:"/outpost cancel"><hover:show_text:"<color:#00AAAA>Click to cancel."><color:#00AAAA>[CLICK HERE]</color:#00AAAA></hover></click> to cancel.'
+    - ' '
+    - <color:#00AAAA><strikethrough>-<gray><strikethrough>---------------------------------------------<color:#00AAAA><strikethrough>-
+    - ' '
+    actionbar: <yellow>Follow the steps to create.
+    title:
+      line: <color:#00AAAA>! <yellow>New Outpost
+      subline: <yellow>Follow the steps
+    bossbar: <yellow>Follow the steps to create. <color:#00AAAA>({time})
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <gold><bold>U</bold><color:#00AAAA><bold>Outpost Creator</bold>
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - '<color:#00AAAA><bold>|</bold> <color:#00AAAA>Follow the steps:'
+    - ''
+    - ' <gray><bold>-</bold> <yellow>Get the <color:#00AAAA>/uoutpost wand'
+    - ' <gray><bold>-</bold> <yellow>Select high and low points.'
+    - ' <gray><bold>-</bold> <yellow>Write in the chat the '
+    - <yellow>new <aqua><bold>Outpost Name</bold>
+    - ' '
+    - <green><bold>DONE!
