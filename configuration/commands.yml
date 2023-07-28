@@ -1,0 +1,169 @@
+Commands:
+  list:
+    outpost:
+      help:
+        permission: uoutposts.player.help
+        alias: ajuda
+        # Active currency amount charged to use the command. This options can be applied to all commands.
+        value: 0.0
+        # in seconds
+        cooldown: 0
+         # Title options can be applied to all commands. Clan placeholders can be applied to texts.
+        title:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+         # Actionbar options can be applied to all commands. Clan placeholders can be applied to texts.
+        actionbar:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+      cancel:
+        permission: uoutposts.player.cancel
+        alias: cancelar
+        # Active currency amount charged to use the command. This options can be applied to all commands.
+        value: 0
+        # in seconds
+        cooldown: 0
+      stats:
+        permission: outposts.player.stats
+        alias: status
+      events:
+        permission: outposts.player.events
+        alias: eventos
+        subcommands:
+        - next
+        - all
+      info:
+        permission: outposts.admin.info
+        alias: informacao
+      loots:
+        permission: outposts.admin.loots
+        alias: saque
+      advantages:
+        permission: outposts.admin.advantages
+        alias: vantagens
+      list:
+        permission: outposts.admin.list
+        alias: lista
+    uoutpost:
+      help:
+        permission: uoutposts.admin.help
+        alias: ajuda
+        title:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+        actionbar:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+      start:
+        permission: uoutposts.admin.start
+        alias: iniciar
+      stop:
+        permission: uoutposts.admin.stop
+        alias: parar
+      tp:
+        permission: uoutposts.admin.tp
+        alias: teleportar
+      reload:
+        permission: uoutposts.admin.reload
+        alias: recarregar
+      wand:
+        permission: uoutposts.admin.wand
+        alias: wand
+      create:
+        permission: uoutposts.admin.create
+        alias: criar
+      move:
+        permission: uoutposts.admin.move
+        alias: mover
+      delete:
+        permission: uoutposts.admin.delete
+        alias: deletar
+      list:
+        permission: uoutposts.admin.list
+        alias: listar
+      view:
+        permission: uoutposts.admin.view
+        alias: ver
+      commands:
+        permission: uoutposts.admin.commands
+        alias: comandos
+        subcommands:
+        - list
+        - add
+        - remove
+      loots:
+        permission: uoutposts.admin.loots
+        alias: loot
+        subcommands:
+        - add
+        - list
+        - type
+        - chance
+      keys:
+        permission: uoutposts.admin.keys
+        alias: keys
+        subcommands:
+        - listblocks
+        - toggle
+        - wand
+        - give
+        - blocktp
+      seticon:
+        permission: uoutposts.admin.seticon
+        alias: seticone
+      proximity:
+        permission: uoutposts.admin.proximity
+        alias: proximidade
+        subcommands:
+        - toggle
+        - setsize
+      setcapture:
+        permission: uoutposts.admin.setcapture
+        alias: setcapturador
+      hologram:
+        permission: uoutposts.admin.hologram
+        alias: holo
+        subcommands:
+        - create
+        - list
+        - delete
+        - tp
+        - movehere
+      stats:
+        permission: uoutposts.admin.stats
+        alias: status
+        subcommands:
+        - list
+        - clearall
+        - remove
+        - add
+      extension:
+        permission: uoutposts.admin.extension
+        alias: ext
+        subcommands:
+        - all
+        - list
+        - download
+        - update
+        - reload
+        - view
+      adminmode:
+        permission: uoutposts.admin.adminmode
+        alias: adm
+      advantages:
+        permission: uoutposts.admin.advantages
+        alias: adv
+        subcommands:
+        - list
+        - view
+        - toggle
+        - setmultiplier
+        - whitelist
+        - sync
+      maintenance:
+        permission: uoutposts.admin.maintenance
+        alias: maint

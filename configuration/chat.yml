@@ -1,0 +1,289 @@
+#
+#
+# Time: in seconds
+#
+# BossBar:
+# Colors: RED, GREEN, PINK, PURPLE, BLUE, WHITE, YELLOW
+# Styles: PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
+# Flags: DARKEN_SCREEN, PLAY_BOSS_MUSIC, CREATE_WORLD_FOG
+#
+#
+# All texts are located in the language files and accept all placeholders from UClans.
+Chat:
+   
+  commandunknownplayer:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  commandunknownadmin:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  addoutpostcommand:
+    enabled: true
+    time: 60
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  sendoutpostinsideenter:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: false
+      center: false
+    bossbar:
+      enabled: true
+      color: BLUE
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: false
+    title:
+      enabled: false
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true
+   
+  sendoutpostoutsideenter:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: false
+      center: false
+    bossbar:
+      enabled: true
+      color: BLUE
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: false
+    title:
+      enabled: false
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true
+   
+  sendoutpostcapture:
+    enabled: true
+    time: 0
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: false
+      center: true
+    bossbar:
+      enabled: true
+      color: BLUE
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: false
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true
+   
+  sendothercapture:
+    enabled: true
+    time: 0
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: false
+      center: true
+    bossbar:
+      enabled: true
+      color: BLUE
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: false
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true
+   
+  sendlosingcapture:
+    enabled: true
+    time: 0
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: false
+      center: true
+    bossbar:
+      enabled: true
+      color: RED
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true
+   
+  sendprecapture:
+    enabled: true
+    time: 0
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: false
+      center: true
+    bossbar:
+      enabled: true
+      color: BLUE
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true
+   
+  # For proximity type ALLWORLDS only.
+  sendoutpostcaptureall:
+    enabled: true
+    time: 10
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: BLUE
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: false
+   
+  addoutpoststats:
+    enabled: true
+    time: 60
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: BLUE
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  sendoutpostcreate:
+    enabled: true
+    time: 120
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: BLUE
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true

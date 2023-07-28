@@ -1,0 +1,393 @@
+Settings:
+  icon_true: LIME_DYE
+  icon_false: GRAY_DYE
+  icon_disabed: BARRIER
+  icon_end: BARRIER
+  icon_createborder: ENDER_EYE
+  icon_topplayer: PLAYER_HEAD
+  icon_topgroup: MINECART
+  icon_world: HOPPER
+  icon_blocks: PISTON
+ 
+ 
+ 
+ 
+# GENERAL GUI
+ 
+General:
+  player_outpost_home:
+    opensound: ''
+    # Make sure the item slot does not exceed the number of slots
+    rows: 5
+    # This option is only used for list menus with pagination
+    pagesize: 0
+    items:
+      fill:
+        material: GRAY_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 0
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - ALL
+      fill2:
+        material: CYAN_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 0
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 17
+        - 18
+        - 26
+        - 27
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+      advantages:
+        clicksound: ''
+        material: ANVIL
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 20
+      list:
+        clicksound: ''
+        material: RECOVERY_COMPASS
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 22
+      stats:
+        clicksound: ''
+        material: BOOK
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 24
+      commands:
+        clicksound: ''
+        material: PAPER
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 40
+  player_outpost_loot:
+    opensound: ''
+    # Make sure the item slot does not exceed the number of slots
+    rows: 6
+    # This option is only used for list menus with pagination
+    pagesize: 45
+    items:
+      fill:
+        material: CYAN_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 45
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+      info:
+        clicksound: ''
+        material: PAPER
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 45
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 53
+  player_outpost_stats:
+    opensound: ''
+    # Make sure the item slot does not exceed the number of slots
+    rows: 4
+    # This option is only used for list menus with pagination
+    pagesize: 0
+    items:
+      fill:
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 0
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - ALL
+      fill2:
+        material: CYAN_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 27
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+      player:
+        clicksound: ''
+        material: PLAYER_HEAD
+        glow: true
+        texture: '%uoutpost_player%'
+        amount: 1
+        slot: 10
+      group:
+        clicksound: ''
+        material: MINECART
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 12
+      detail:
+        clicksound: ''
+        material: BOOK
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 16
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 35
+  player_outpost_advantages:
+    opensound: ''
+    rows: 6
+    pagesize: 27
+    items:
+      fill:
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 0
+        mimeslots:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+      fill2:
+        material: CYAN_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 45
+        mimeslots:
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+      prev:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 47
+      next:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 51
+      current:
+        clicksound: ''
+        material: ANVIL
+        glow: true
+        texture: ''
+        amount: 1
+      captures:
+        clicksound: ''
+        material: RECOVERY_COMPASS
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 1
+      involvement:
+        clicksound: ''
+        material: PLAYER_HEAD
+        glow: true
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTlmNzYyMGZlOThiNDNiMTczNDIyZDAwZjU3MzBlNWY0MWUyNDgyNzlhNjJlYmRhMGMyOGNjODVhODNkOGNjNiJ9fX0=
+        amount: 1
+        slot: 3
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 53
+  player_outpost_list:
+    opensound: ''
+    rows: 6
+    pagesize: 45
+    items:
+      fill:
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 45
+        mimeslots:
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+      prev:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 47
+      next:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 51
+      current:
+        clicksound: ''
+        material: ''
+        glow: true
+        texture: '%uoutpost_icon%'
+        amount: 1
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 53
+  player_outpost_stats_detail:
+    opensound: ''
+    rows: 6
+    pagesize: 45
+    items:
+      fill:
+        material: CYAN_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 45
+        mimeslots:
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+      prev:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 47
+      next:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 51
+      current:
+        clicksound: ''
+        material: PAPER
+        glow: true
+        texture: ''
+        amount: 1
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 53
+  player_outpost_view:
+    opensound: ''
+    rows: 3
+    pagesize: 0
+    items:
+      fill:
+        material: CYAN_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 0
+        mimeslots:
+        - ALL
+        nbt: [
+          ]
+        model: 0
+      info:
+        clicksound: ''
+        material: ''
+        glow: true
+        texture: '%uoutpost_icon%'
+        amount: 1
+        slot: 10
+      loots:
+        clicksound: ''
+        material: BOOK
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 12
