@@ -1,0 +1,133 @@
+Plugin:
+  check_for_updates: true
+ 
+Config:
+  tag: <#e1b128><bold>U</bold><gradient:#00AAAA:#55ffff><bold>Outpost</bold></gradient> <gray>|
+   
+  gui:
+    # The gui menus work as of 1.8 but you can turn it off and just use text mode
+    enabled: true
+    # Permission to use gui
+    player_permission: uoutpost.player.gui
+    # Permission to use gui
+    admin_permission: uoutpost.admin.gui
+    # Open gui menu when commands have no arguments
+    open_gui_noargs: true
+  date_format_short: dd/MM/yyyy
+  # You can insert your own languages the /language/ folder following the Lang_ID.yml pattern.
+  # Default languages:
+  # EN - English
+  # ES - Spanish
+  # RU - Russian
+  language: EN
+  disabled_command_regions:
+  - disabled_region
+  disabled_command_worlds:
+  - disabled_world
+  # IN SECONDS
+  announce_update_delay: 1
+   
+  effects:
+    debugmarker: false
+   
+  holograms:
+    ajust_y: 5.0
+    # in seconds
+    task: 5
+    default_maxlines: 10
+    # If it contains worldguard regions here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_regions: [
+      ]
+    # If it contains world names here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_worlds: [
+      ]
+   
+  command:
+    sort_alphabetically: true
+    max_results_per_page: 8
+   
+  # Download the current version at: {THIS_REPO}/ExtensionName/ExtensionName-latest.version.jar
+  # Find the current version in: {THIS_REPO}/ExtensionName/{THIS_VERSION_FILE}.yml
+  extensions:
+    autodownload_enabled: false
+    repo: https://raw.githubusercontent.com/UlrichBR/UOutpost/main/extensions/
+    list: extensions.yml
+    version_file: version.yml
+   
+  money:
+    enabled: true
+    currency: $
+    # Compatible Economy Plugins:
+    #CLANBANK - by UlrichBR
+    # VAULT - by Sleaker
+    # PLAYERPOINTS - by Esophose
+    # TOKENENCHANT - by TeamVK
+    type: VAULT
+   
+  outpost:
+    default_icon: RECOVERY_COMPASS
+    default_capture_time: 60
+    disable_knockback: false
+    multiple_captures: true
+    proximity:
+      enabled: true
+      # blocks around location
+      default: 64
+     
+    key:
+      default_icon: TRIPWIRE_HOOK
+      default_glow: true
+      default_enabled: true
+      acceptable_blocks:
+      - CHEST
+      # If it contains worldguard regions here, the wand will only work within those regions. If it is empty it will ignore it
+      enabled_regions: [
+        ]
+      # If it contains world names here, the wand will only work within those regions. If it is empty it will ignore it
+      enabled_worlds: [
+        ]
+      hologram:
+        enabled: true
+        task: 30
+        ajust_y: 1.5
+        lines:
+        - <#00AAAA><bold>Outpost Loots</bold>
+        - <aqua>Use the KEY to open!
+    # 0 to disable. In seconds a cooldown to capture after abandoning or losing the outpost
+    cooldown_capture: 10
+   
+  group:
+    default_allow_without_group: true
+   
+  scoreboard:
+    enabled: true
+   
+  advanges:
+    potion:
+      # in seconds
+      task: 5
+      amplifier: 1
+   
+  wand:
+    # If it contains worldguard regions here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_regions: [
+      ]
+    # If it contains world names here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_worlds: [
+      ]
+   
+  translate:
+    enabled: true
+    reference:
+      block: block.minecraft.{object}
+      entity: entity.minecraft.{object}
+      item: item.minecraft.{object}
+      biome: biome.minecraft.{object}
+      color: color.minecraft.{object}
+      enchantment: enchantment.minecraft.{object}
+      gameMode: gameMode.{object}
+      effect: effect.minecraft.{object}
+ 
+# DONT CHANGE THIS
+version:
+  generated: 1.0.0
