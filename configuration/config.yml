@@ -25,7 +25,7 @@ Config:
   disabled_command_worlds:
   - disabled_world
   # IN SECONDS
-  announce_update_delay: 1
+  announce_update_delay: 2
    
   effects:
     debugmarker: false
@@ -69,6 +69,8 @@ Config:
     default_capture_time: 60
     disable_knockback: false
     multiple_captures: true
+    # 0 to disable. In seconds a cooldown to capture after abandoning or losing the outpost
+    cooldown_capture: 0
     proximity:
       enabled: true
       # blocks around location
@@ -93,8 +95,6 @@ Config:
         lines:
         - <#00AAAA><bold>Outpost Loots</bold>
         - <aqua>Use the KEY to open!
-    # 0 to disable. In seconds a cooldown to capture after abandoning or losing the outpost
-    cooldown_capture: 10
    
   group:
     default_allow_without_group: true
@@ -130,4 +130,4 @@ Config:
  
 # DONT CHANGE THIS
 version:
-  generated: 1.0.0
+  generated: 1.1.0
