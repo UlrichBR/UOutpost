@@ -1,0 +1,102 @@
+/////////// INTERNAL AND EXTERNAL
+
+%uoutpost_iscapturer%
+%uoutpost_player_involved_amount%
+%uoutpost_player_involved%
+%uoutpost_player_captures%
+%uoutpost_player_captures_amount%
+%uoutpost_iscapturer_formated%
+%uoutpost_advantages_amount%
+
+%uoutpost_advantages:{OUTPOST}:{ID}:type%
+#Available values ​​for placeholder 'uoutpost_advantages:':
+#TYPE: multiplier, whitelist_amount, whitelist, name, outpostname, enabled
+%uoutpost_unformated_top:FIND:TYPE:TIME:NUM%
+#Available values ​​for placeholder 'ukoth_unformated_top:':
+#FIND: NAME and AMOUNT
+#TYPE: TOPGROUP and TOPPLAYER
+#TIME: ALL, DAILY, WEEKLY, MONTHLY and YEARLY
+%uoutpost_top:TYPE:TIME:NUM%
+#Available values ​​for placeholder 'uoutpost_top:':
+#TYPE: TOPGROUP and TOPPLAYER
+#TIME: ALL, DAILY, WEEKLY, MONTHLY and YEARLY
+
+%uoutpost_player_single_win_amount%
+%uoutpost_player_group_win_amount%
+%uoutpost_player_group%
+%uoutpost_player%
+%uoutpost_active_now%
+%uoutpost_active_now_formated%
+%uoutpost_key%
+%uoutpost_direction_relative%
+
+/////////// INTERNAL PLACEHOLDERS TO GUI, LANG etc..
+%uoutpost_icon%
+%uoutpost_key%
+%uoutpost_usekey%
+%uoutpost_name%
+%uoutpost_cuboid_area%
+%uoutpost_commands_amount%
+%uoutpost_elapsedtime%
+%uoutpost_pretimeleft%
+%uoutpost_precontrol_player%
+%uoutpost_precontrol_group%
+%uoutpost_control_player%
+%uoutpost_control_group%
+%uoutpost_capture_time%
+%uoutpost_barleft_% (ex: %uoutpost_barleft_{amount}_length:15_remaining:<gray>■_progress:<#e1b128>■_complete:<#d15f21>■_fullbar:<red>Ending%)
+%uoutpost_prebarleft_% (ex: %uoutpost_prebarleft_{amount}_length:15_remaining:<gray>■_progress:<#e1b128>■_complete:<#d15f21>■_fullbar:<red>Ending%)
+%uoutpost_world%
+%uoutpost_coord_x%
+%uoutpost_coord_y%
+%uoutpost_coord_z%
+%uoutpost_loot_type%
+%uoutpost_loot_chance%
+%uoutpost_loots_amount%
+%uoutpost_keyreceive_enabled%
+%uoutpost_keyreceive_amount%
+%uoutpost_proximity_size%
+%uoutpost_proximity_type%
+%uoutpost_command:NUM%
+%uoutpost_command_type:NUM%
+%uoutpost_maintenance_state%
+%uoutpost_maintenance_state_formated%
+%uoutpost_advantages_size%
+%uoutpost_advantages_multiplier_total%
+
+/////////// EXTERNAL PLACEHOLDERS WITH PAPI
+
+////////// USE THE NAME BETWEEN CURLY BRACES (ex: %uoutpost_{MyOutpost}_name%)
+
+%uoutpost_{OUTPOST}_icon%
+%uoutpost_{OUTPOST}_key%
+%uoutpost_{OUTPOST}_usekey%
+%uoutpost_{OUTPOST}_name%
+%uoutpost_{OUTPOST}_cuboid_area%
+%uoutpost_{OUTPOST}_commands_amount%
+%uoutpost_{OUTPOST}_elapsedtime%
+%uoutpost_{OUTPOST}_pretimeleft%
+%uoutpost_{OUTPOST}_precontrol_player%
+%uoutpost_{OUTPOST}_precontrol_group%
+%uoutpost_{OUTPOST}_control_player%
+%uoutpost_{OUTPOST}_control_group%
+%uoutpost_{OUTPOST}_capture_time%
+%uoutpost_{OUTPOST}_barleft_% (ex: %uoutpost_barleft_{amount}_length:15_remaining:<gray>■_progress:<#e1b128>■_complete:<#d15f21>■_fullbar:<red>Ending%)
+%uoutpost_{OUTPOST}_prebarleft_% (ex: %uoutpost_prebarleft_{amount}_length:15_remaining:<gray>■_progress:<#e1b128>■_complete:<#d15f21>■_fullbar:<red>Ending%)
+%uoutpost_{OUTPOST}_world%
+%uoutpost_{OUTPOST}_coord_x%
+%uoutpost_{OUTPOST}_coord_y%
+%uoutpost_{OUTPOST}_coord_z%
+%uoutpost_{OUTPOST}_loot_type%
+%uoutpost_{OUTPOST}_loot_chance%
+%uoutpost_{OUTPOST}_loots_amount%
+%uoutpost_{OUTPOST}_keyreceive_enabled%
+%uoutpost_{OUTPOST}_keyreceive_amount%
+%uoutpost_{OUTPOST}_proximity_size%
+%uoutpost_{OUTPOST}_proximity_type%
+%uoutpost_{OUTPOST}_command:NUM%
+%uoutpost_{OUTPOST}_command_type:NUM%
+%uoutpost_{OUTPOST}_maintenance_state%
+%uoutpost_{OUTPOST}_maintenance_state_formated%
+%uoutpost_{OUTPOST}_advantages_size%
+%uoutpost_{OUTPOST}_advantages_multiplier_total%
