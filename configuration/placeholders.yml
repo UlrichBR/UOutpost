@@ -12,7 +12,7 @@
 #Available values ​​for placeholder 'uoutpost_advantages:':
 #TYPE: multiplier, whitelist_amount, whitelist, name, outpostname, enabled
 %uoutpost_unformated_top:FIND:TYPE:TIME:NUM%
-#Available values ​​for placeholder 'ukoth_unformated_top:':
+#Available values ​​for placeholder 'uoutpost_unformated_top:':
 #FIND: TIME, NAME and AMOUNT
 #TYPE: TOPGROUP and TOPPLAYER
 #TIME: ALL, DAILY, WEEKLY, MONTHLY and YEARLY
