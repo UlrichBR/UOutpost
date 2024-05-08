@@ -63,6 +63,7 @@
 %uoutpost_maintenance_state_formated%
 %uoutpost_advantages_size%
 %uoutpost_advantages_multiplier_total%
+%uoutpost_interaction:KEY:VALUE% accepting the key values "MINPLAYERSGROUP" and "multiplier and data" values
 
 /////////// EXTERNAL PLACEHOLDERS WITH PAPI
 
@@ -100,3 +101,5 @@
 %uoutpost_{OUTPOST}_maintenance_state_formated%
 %uoutpost_{OUTPOST}_advantages_size%
 %uoutpost_{OUTPOST}_advantages_multiplier_total%
+%uoutpost_{OUTPOST}_interaction:KEY:VALUE% accepting the key values "MINPLAYERSGROUP" and "multiplier and data" values
+
