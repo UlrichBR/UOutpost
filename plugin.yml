@@ -1,0 +1,70 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}
+version: ${project.version}
+author: UlrichBR
+website: https://polymart.org/team/ulrichcraft.99
+description: The best and most complete system of Outpost.
+api-version: 1.13
+folia-supported: true
+softdepend: [WildTools, Vault, PlaceholderAPI, WorldGuard, WorldEdit, ProtocolLib, HolographicDisplays, MergedSpawner, CMI, Holograms, MythicMobs, KingdomCraft, DecentHolograms, UltimateClans, TAB, SimpleClans, Towny, BetterTeams, Factions, GangsPlus, SternalBoard, IridiumSkyblock, ShopGUIPlus ,AnimatedScoreboard, MedievalFactions, SuperMobCoins, SuperiorSkyblock2, Lands, Kingdoms, FeatherBoard, AutoSell, UltimateFactions]
+commands:
+   uoutpost:
+      description: Open the help staff menu.
+      usage: /<command>
+      aliases: [uop]
+   outpost:
+      description: Open the help player menu.
+      usage: /<command>
+      aliases: [outp]
+permissions:
+   uoutposts.*:
+      description: "Bypass every restriction"
+      default: false
+      children:
+         uoutposts.admin: true
+         outposts.admin: true
+         uoutposts.player: true
+         outposts.player: true
+
+   uoutposts.admin.*:
+      description: "Admin permission to manage the plugin"
+      default: false
+      children:
+         uoutposts.admin.help: true
+         uoutposts.admin.tp: true
+         uoutposts.admin.reload: true
+         uoutposts.admin.wand: true
+         uoutposts.admin.create: true
+         uoutposts.admin.move: true
+         uoutposts.admin.delete: true
+         uoutposts.admin.list: true
+         uoutposts.admin.view: true
+         uoutposts.admin.commands: true
+         uoutposts.admin.loots: true
+         uoutposts.admin.keys: true
+         uoutposts.admin.seticon: true
+         uoutposts.admin.proximity: true
+         uoutposts.admin.setcapture: true
+         uoutposts.admin.hologram: true
+         uoutposts.admin.stats: true
+         uoutposts.admin.extension: true
+         uoutposts.admin.adminmode: true
+         uoutposts.admin.advantages: true
+         uoutposts.admin.maintenance: true
+         uoutposts.admin.settings: true
+         uoutposts.admin.interactions: true
+
+
+   uoutposts.player:
+      description: "Default permission package for players"
+      default: false
+      children:
+         uoutposts.player.help: true
+         uoutposts.player.cancel: true
+         uoutposts.player.stats: true
+         uoutposts.player.events: true
+         uoutposts.player.info: true
+         uoutposts.player.loots: true
+         uoutposts.player.advantages: true
+         uoutposts.player.list: true
+         uoutposts.player.abandon: true
