@@ -64,6 +64,8 @@
 %uoutpost_advantages_size%
 %uoutpost_advantages_multiplier_total%
 %uoutpost_interaction:KEY:VALUE% accepting the key values "MINPLAYERSGROUP" and "multiplier and data" values
+%uoutpost_event_requirement_total%
+%uoutpost_event_requirement:<type>:<value> accepting values: <type>: REQUIRESANOTHEREVENT and <value>: list and amount.
 
 /////////// EXTERNAL PLACEHOLDERS WITH PAPI
 
